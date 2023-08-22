@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<W2Alt Name="w2RSSacTrn" Index="16638" LastModified="1692225649567" runW2="false">
+  <Description>
+    <desc cnt="0" value="Upper Sacramento / Trinity System ResSim model with all Reservoirs" />
+    <desc cnt="1" value="Supports Calibration/Historical ResSim model runs with prescribed operations across the historical data period for the 5-reservoir and 2-river (+Clear Creek) UpperSac system." />
+  </Description>
+  <W2Models />
+</W2Alt>
+

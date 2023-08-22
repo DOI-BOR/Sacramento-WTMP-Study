@@ -1,0 +1,34 @@
+location,parameter,dss file,dss path
+ReddingAirport-RED,Air Temperature,forecast/simGroups/testUpDate2Scripts/bc.dss,/USBR/REDDING_KRDD/TEMP-AIR/*/1Hour/op1-blah-2004/
+ReddingAirport-RED,Humidity,forecast/simGroups/testUpDate2Scripts/bc.dss,/USBR/REDDING_KRDD/RELHUM/*/1HOUR/op1-blah-2004/
+ReddingAirport-RED,Shortwave Radiation,forecast/simGroups/testUpDate2Scripts/bc.dss,/USBR/REDDING_RRAC1/SRO/*/1HOUR/op1-blah-2004/
+ReddingAirport-RED,Cloudiness,forecast/simGroups/testUpDate2Scripts/bc.dss,/USBR/REDDING_KRDD/CLOUD-FRACTION_0-1/*/1HOUR/op1-blah-2004/
+ReddingAirport-RED,Wind Speed,forecast/simGroups/testUpDate2Scripts/bc.dss,/USBR/REDDING_KRDD/SPEED-WIND/*/1HOUR/op1-blah-2004/
+ReddingAirport-RED,Air Temperature,forecast/simGroups/testUpDate2Scripts/bc.dss,/USBR/REDDING_KRDD/TEMP-AIR/*/1Hour/op1-blah-2004/
+SHASTA,INFLOW,forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/INFLOW//1MON/op1-blah-2004/
+SHASTA,FLOW-IN,forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/FLOW-IN//1DAY/op1-blah-2004/
+SHASTA,EST. EVAP.,forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/EST. EVAP.//1MON/op1-blah-2004/
+SHASTA,TOTAL SHASTA RELEASE,forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/TOTAL SHASTA RELEASE//1MON/op1-blah-2004/
+SHASTA,FLOW-RELEASE,forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/FLOW-RELEASE//1HOUR/op1-blah-2004/
+SHASTA,FLOW-KESWICK-CFS,forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/FLOW-KESWICK-CFS//1MON/op1-blah-2004/
+SHASTA,KESWICK-TAF,forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/KESWICK-TAF//1MON/op1-blah-2004/
+SHASTA,FLOW-KESWICK TARGET (CFS),forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/FLOW-KESWICK TARGET (CFS)//1MON/op1-blah-2004/
+SHASTA,STORAGE,forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/STORAGE//1MON/op1-blah-2004/
+SHASTA,ELEVATION (FEET),forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/ELEVATION (FEET)//1MON/op1-blah-2004/
+SHASTA,AREA (ACRES),forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/AREA (ACRES)//1MON/op1-blah-2004/
+SHASTA,FLOW-WILKIN'S TARGET (CFS),forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/FLOW-WILKIN'S TARGET (CFS)//1MON/op1-blah-2004/
+SHASTA,FLOW-KESWICK TO WILKINS ACC-DEP (CFS),forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/FLOW-KESWICK TO WILKINS ACC-DEP (CFS)//1MON/op1-blah-2004/
+SHASTA,FLOW-FLOW@WILKIN'S SLOUGH (CFS),forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/FLOW-FLOW@WILKIN'S SLOUGH (CFS)//1MON/op1-blah-2004/
+SHASTA,SAC AFRP,forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/SAC AFRP//1MON/op1-blah-2004/
+SHASTA,FLOW-ACC-DEP,forecast/simGroups/testUpDate2Scripts/bc.dss,//SHASTA/FLOW-ACC-DEP//1DAY/op1-blah-2004/
+Whiskeytown,SPRING CR.,forecast/simGroups/testUpDate2Scripts/bc.dss,//Whiskeytown/SPRING CR.//1MON/op1-blah-2004/
+Whiskeytown,FLOW-PP,forecast/simGroups/testUpDate2Scripts/bc.dss,//Whiskeytown/FLOW-PP//1HOUR/op1-blah-2004/
+ZERO-BY-DAY,FLOW-ZERO,forecast/simGroups/testUpDate2Scripts/bc.dss,//ZERO-BY-DAY/FLOW-ZERO//1DAY/op1-blah-2004/
+ZERO-BY-HOUR,FLOW-ZERO,forecast/simGroups/testUpDate2Scripts/bc.dss,//ZERO-BY-HOUR/FLOW-ZERO//1Hour/op1-blah-2004/
+Shasta-Sac-in,FLOW-IN,forecast/simGroups/testUpDate2Scripts/bc.dss,//Shasta-Sac-in/FLOW-IN//1DAY/op1-blah-2004/
+Shasta-Pit-in,FLOW-IN,forecast/simGroups/testUpDate2Scripts/bc.dss,//Shasta-Pit-in/FLOW-IN//1DAY/op1-blah-2004/
+Shasta-McCloud-in,FLOW-IN,forecast/simGroups/testUpDate2Scripts/bc.dss,//Shasta-McCloud-in/FLOW-IN//1DAY/op1-blah-2004/
+Shasta-Sulanharas-in,FLOW-IN,forecast/simGroups/testUpDate2Scripts/bc.dss,//Shasta-Sulanharas-in/FLOW-IN//1DAY/op1-blah-2004/
+Shasta-Sac-in,TEMP-WATER,forecast/simGroups/testUpDate2Scripts/bc.dss,//Shasta-Sac-in/TEMP-WATER//1HOUR/op1-blah-2004/
+Shasta-Pit-in,TEMP-WATER,forecast/simGroups/testUpDate2Scripts/bc.dss,//Shasta-Pit-in/TEMP-WATER//1HOUR/op1-blah-2004/
+Shasta-McCloud-in,TEMP-WATER,forecast/simGroups/testUpDate2Scripts/bc.dss,//Shasta-McCloud-in/TEMP-WATER//1HOUR/op1-blah-2004/

@@ -1,0 +1,45 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [ {
+    "type" : "Feature",
+    "properties" : {
+      "labelposition" : "EAST",
+      "name" : "RDD Redding Airport",
+      "description" : "",
+      "streamStation" : 0.0,
+      "streamName" : "",
+      "isMetStation" : true,
+      "latitude" : 0.0,
+      "longitude" : 0.0
+    },
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ 696260.7128546566, 1.471073644145215E7 ]
+    },
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "labelPosition" : "EAST"
+  }, {
+    "type" : "Feature",
+    "properties" : {
+      "labelposition" : "EAST",
+      "name" : "Trinity Center",
+      "description" : "",
+      "streamStation" : 0.0,
+      "streamName" : "",
+      "isMetStation" : true,
+      "latitude" : 0.0,
+      "longitude" : 0.0
+    },
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ 573220.7749852159, 1.4885876381680042E7 ]
+    },
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "labelPosition" : "EAST"
+  } ],
+  "name" : "StationSet",
+  "id" : 0,
+  "description" : ""
+}

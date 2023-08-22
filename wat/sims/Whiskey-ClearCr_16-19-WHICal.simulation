@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WatSimulation SimulationName="Whiskey-ClearCr_16-19-WHICal" Description="" FPart="ResSim-Ele:2016-2019" HasComputed="true" ComputeError="false" Parent="Whiskey-ClearCr_16-19-WHICal" LastComputedBy="rmaresults" LastComputedDate="1690313056213" IsFrmSimulation="false">
+  <ModelAlternatives ModelAlternativeCount="2">
+    <ModelAlternative0 Program="ResSim" Name="WhisClear" File="rss/WhisClear.ralt">
+      <Description />
+      <LastComputeTime Date="25 July 2023, 19:24:15" />
+    </ModelAlternative0>
+    <ModelAlternative1 Program="Scripting" Name="WhiskeyTown_Tunnel_AddHeating_WhisClear" File="scripting/WhiskeyTown_Tunnel_AddHeating_WhisClear.scAlt">
+      <Description />
+      <LastComputeTime Date="25 July 2023, 19:24:16" />
+    </ModelAlternative1>
+  </ModelAlternatives>
+  <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />
+</WatSimulation>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScriptingAlt Name="Post-Process_ResSim_SacTrn">
+  <Description>
+    <desc cnt="0" value="Adds tunnel heating to output values to provide a record of end-tunnel temperatures" />
+  </Description>
+  <ScriptFile>scripts/Post-Process_ResSim_SacTrn.py</ScriptFile>
+  <TimeStep>1HOUR</TimeStep>
+  <DataLocations>
+    <DataLocation Name="WQ_BOUND_TEMP_SRC_CCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_CCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
+    </DataLocation>
+    <DataLocation Name="LEWISTON RESERVOIR-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//LEWISTON RESERVOIR-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
+    </DataLocation>
+    <DataLocation Name="WQ_BOUND_TEMP_SRC_SCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_SCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
+    </DataLocation>
+    <DataLocation Name="WHISKEYTOWN LAKE-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WHISKEYTOWN LAKE-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
+    </DataLocation>
+  </DataLocations>
+  <OutputDataLocations>
+    <DataLocation Name="LewistonTunnel_With_Heating" Class="hec2.model.DssDataLocation" DssPath="//LewistonTunnel_With_Heating/TEMP-WATER//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
+    </DataLocation>
+    <DataLocation Name="WhiskeyTownTunnel_With_Heating" Class="hec2.model.DssDataLocation" DssPath="//WhiskeyTownTunnel_With_Heating/TEMP-WATER//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
+    </DataLocation>
+  </OutputDataLocations>
+</ScriptingAlt>
+

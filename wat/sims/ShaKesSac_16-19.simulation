@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WatSimulation SimulationName="ShaKesSac_16-19" Description="" FPart="ResSim-Ele:2016-2019" HasComputed="false" ComputeError="false" Parent="ShaKesSac_16-19" LastComputedBy="benjamin" LastComputedDate="1687563006106" IsFrmSimulation="false">
+  <ModelAlternatives ModelAlternativeCount="1">
+    <ModelAlternative0 Program="ResSim" Name="ShaKesSac" File="rss/ShaKesSac.ralt">
+      <Description />
+      <LastComputeTime Date="31 December 1899, 24:00:00" />
+    </ModelAlternative0>
+  </ModelAlternatives>
+  <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />
+</WatSimulation>
+

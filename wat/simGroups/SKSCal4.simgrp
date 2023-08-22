@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationGroup Name="SKSCal4">
+  <Description />
+  <AnalysisPeriod>2016-2019</AnalysisPeriod>
+  <Simulations>
+    <Simulation>
+      <Name>ShaKesSac_16-19-SKSCal4</Name>
+      <Class>hec2.wat.model.WatSimulation</Class>
+    </Simulation>
+  </Simulations>
+  <ComputeTypes />
+</SimulationGroup>
+

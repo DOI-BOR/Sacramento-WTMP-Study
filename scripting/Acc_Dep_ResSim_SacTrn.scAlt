@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScriptingAlt Name="Acc_Dep_ResSim_SacTrn">
+  <Description>
+    <desc cnt="0" value="Compute Accretion/Depletion (balance) flows for reservoirs under prescribed operations" />
+  </Description>
+  <ScriptFile>scripts/Acc_Dep_ResSim_SacTrn.py</ScriptFile>
+  <TimeStep>1HOUR</TimeStep>
+</ScriptingAlt>
+

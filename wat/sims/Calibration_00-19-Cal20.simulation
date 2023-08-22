@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WatSimulation SimulationName="Calibration 00-19-Cal20" Description="" FPart="ResSim Pre:2000-2019" HasComputed="false" ComputeError="false" Parent="Calibration 00-19-Cal20" IsFrmSimulation="false">
+  <ModelAlternatives ModelAlternativeCount="4">
+    <ModelAlternative0 Program="Scripting" Name="Pre-Process_ResSim_SacTrnPO" File="scripting/Pre-Process_ResSim_SacTrnPO.scAlt">
+      <Description>
+        <desc cnt="0" value="Pre-process DMS prescribed data into required ResSim-specific records" />
+      </Description>
+      <LastComputeTime Date="31 December 1899, 24:00" />
+    </ModelAlternative0>
+    <ModelAlternative1 Program="Scripting" Name="Acc_Dep_ResSim_SacTrn" File="scripting/Acc_Dep_ResSim_SacTrn.scAlt">
+      <Description>
+        <desc cnt="0" value="Compute Accretion/Depletion (balance) flows for reservoirs under prescribed operations" />
+      </Description>
+      <LastComputeTime Date="31 December 1899, 24:00" />
+    </ModelAlternative1>
+    <ModelAlternative2 Program="ResSim" Name="RSSacTrnPO" File="rss/RSSacTrnPO.ralt">
+      <Description />
+      <LastComputeTime Date="31 December 1899, 24:00" />
+    </ModelAlternative2>
+    <ModelAlternative3 Program="Scripting" Name="Post-Process_ResSim_SacTrn" File="scripting/Post-Process_ResSim_SacTrn.scAlt">
+      <Description>
+        <desc cnt="0" value="Adds tunnel heating to output values to provide a record of end-tunnel temperatures" />
+      </Description>
+      <LastComputeTime Date="31 December 1899, 24:00" />
+    </ModelAlternative3>
+  </ModelAlternatives>
+  <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />
+</WatSimulation>
+

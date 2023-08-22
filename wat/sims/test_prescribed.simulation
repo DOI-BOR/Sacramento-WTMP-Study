@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WatSimulation SimulationName="test_prescribed" Description="" FPart="ResSim Pre:2018" HasComputed="true" ComputeError="false" Parent="test_prescribed" LastComputedBy="benjamin" LastComputedDate="1692645228323" IsFrmSimulation="false">
+  <ModelAlternatives ModelAlternativeCount="4">
+    <ModelAlternative0 Program="Scripting" Name="Pre-Process_ResSim_SacTrnPO" File="scripting/Pre-Process_ResSim_SacTrnPO.scAlt">
+      <Description>
+        <desc cnt="0" value="Pre-process DMS prescribed data into required ResSim-specific records" />
+      </Description>
+      <LastComputeTime Date="21 August 2023, 19:11:59" />
+    </ModelAlternative0>
+    <ModelAlternative1 Program="Scripting" Name="Acc_Dep_ResSim_SacTrn" File="scripting/Acc_Dep_ResSim_SacTrn.scAlt">
+      <Description>
+        <desc cnt="0" value="Compute Accretion/Depletion (balance) flows for reservoirs under prescribed operations" />
+      </Description>
+      <LastComputeTime Date="21 August 2023, 19:12:01" />
+    </ModelAlternative1>
+    <ModelAlternative2 Program="ResSim" Name="RSSacTrnPO" File="rss/RSSacTrnPO.ralt">
+      <Description />
+      <LastComputeTime Date="21 August 2023, 19:13:48" />
+    </ModelAlternative2>
+    <ModelAlternative3 Program="Scripting" Name="Post-Process_ResSim_SacTrn" File="scripting/Post-Process_ResSim_SacTrn.scAlt">
+      <Description>
+        <desc cnt="0" value="Adds tunnel heating to output values to provide a record of end-tunnel temperatures" />
+      </Description>
+      <LastComputeTime Date="18 August 2023, 22:55" />
+    </ModelAlternative3>
+  </ModelAlternatives>
+  <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />
+</WatSimulation>
+

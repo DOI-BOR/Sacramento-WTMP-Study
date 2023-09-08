@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScriptingAlt Name="Pre-Process_ResSim_SacTrn">
+  <Description>
+    <desc cnt="0" value="Pre-process any data into required ResSim-specific records for forecast simulations" />
+  </Description>
+  <ScriptFile>scripts/Pre-Process_ResSim_SacTrn.py</ScriptFile>
+  <TimeStep>1HOUR</TimeStep>
+</ScriptingAlt>
+

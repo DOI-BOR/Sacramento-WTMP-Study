@@ -5,8 +5,10 @@
       <Description />
       <LastComputeTime Date="16 February 2023, 17:07" />
     </ModelAlternative0>
-    <ModelAlternative1 Program="Scripting" Name="WhiskeyTown_Tunnel_AddHeating_WhisClear" File="scripting/WhiskeyTown_Tunnel_AddHeating_WhisClear.scAlt">
-      <Description />
+    <ModelAlternative1 Program="Scripting" Name="Post-Process_ResSim_SacTrn" File="scripting/Post-Process_ResSim_SacTrn.scAlt">
+      <Description>
+        <desc cnt="0" value="Adds tunnel heating to output values to provide a record of end-tunnel temperatures" />
+      </Description>
       <LastComputeTime Date="31 December 1899, 24:00" />
     </ModelAlternative1>
   </ModelAlternatives>

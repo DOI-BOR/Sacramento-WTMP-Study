@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastSimulationGroup Name="2018">
+  <Description />
+  <AnalysisPeriod>2018</AnalysisPeriod>
+  <Simulations>
+    <Simulation>
+      <Name>ResSim-2018</Name>
+      <Class>hec2.wat.model.WatSimulation</Class>
+    </Simulation>
+  </Simulations>
+  <TemperatureTargetSets />
+  <InitialConditions />
+  <Operations />
+  <Meteorology />
+  <BoundaryConditions />
+  <EnsembleSets />
+  <EnsembleSetIndexing />
+</ForecastSimulationGroup>
+

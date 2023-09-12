@@ -48,10 +48,10 @@
     </DataLocation>
   </DataLocations>
   <OutputDataLocations>
-    <DataLocation Name="LEW-Out-FWA" Class="hec2.model.DataLocation" DssPath="//LEW-Out-FWA/TEMP-WATER//1HOUR/alt:ap:Scripting-OutputLink_W2-Lewiston/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="LEW-Out-FWA" Class="hec2.model.DataLocation" DssPath="//LEW-Out-FWA/TEMP-WATER//1HOUR/C:000000|altName:apName:Scripting-OutputLink_W2-Lewiston/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="OutputLink_W2-Lewiston-Downstream_SacTrn" Program="Scripting" />
     </DataLocation>
-    <DataLocation Name="ClearCreek_heated" Class="hec2.model.DataLocation" DssPath="//ClearCreek_heated/Temp//1HOUR/alt:ap:Scripting-OutputLink_W2-Lewiston/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="ClearCreek_heated" Class="hec2.model.DataLocation" DssPath="//ClearCreek_heated/Temp//1HOUR/C:000000|altName:apName:Scripting-OutputLink_W2-Lewiston/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="OutputLink_W2-Lewiston-Downstream_SacTrn" Program="Scripting" />
     </DataLocation>
   </OutputDataLocations>

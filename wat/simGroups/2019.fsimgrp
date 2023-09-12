@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastSimulationGroup Name="2019">
+  <Description />
+  <AnalysisPeriod>2019</AnalysisPeriod>
+  <Simulations>
+    <Simulation>
+      <Name>ResSim-2019</Name>
+      <Class>hec2.wat.model.WatSimulation</Class>
+    </Simulation>
+  </Simulations>
+  <TemperatureTargetSets />
+  <InitialConditions>
+    <Reservoir Name="Keswick Reservoir">
+      <Profile Name="2018-12-01" />
+    </Reservoir>
+    <Reservoir Name="Whiskeytown Lake">
+      <Profile Name="2019-03-11" />
+    </Reservoir>
+    <Reservoir Name="Shasta Lake">
+      <Profile Name="2019-03-11" />
+    </Reservoir>
+    <Reservoir Name="Lewiston Reservoir">
+      <Profile Name="2012-03-07" />
+    </Reservoir>
+    <Reservoir Name="Trinity Lake">
+      <Profile Name="2019-03-12" />
+    </Reservoir>
+  </InitialConditions>
+  <Operations />
+  <Meteorology />
+  <BoundaryConditions />
+  <EnsembleSets />
+  <EnsembleSetIndexing />
+</ForecastSimulationGroup>
+

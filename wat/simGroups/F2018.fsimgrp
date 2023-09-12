@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastSimulationGroup Name="F2018">
+  <Description />
+  <AnalysisPeriod>2018</AnalysisPeriod>
+  <Simulations>
+    <Simulation>
+      <Name>ResSim-F2018</Name>
+      <Class>hec2.wat.model.WatSimulation</Class>
+    </Simulation>
+  </Simulations>
+  <TemperatureTargetSets>
+    <TemperatureTargetSet Name="SHASTA - TIER 1" user-defined="false">
+      <Description />
+      <file-path>forecast\CVP-ops\TempTarget-weekly.dss</file-path>
+      <Output-DSS-File>forecast\simGroups\F2018\SHASTA - TIER 1.dss</Output-DSS-File>
+      <River-Location Name="Above Clear Creek" Index="2">
+        <Description />
+      </River-Location>
+      <dss-pathnames>
+        <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Hour/C:000001|TIER 1/</dss-pathname>
+        <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Hour/C:000002|TIER 1/</dss-pathname>
+        <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Hour/C:000003|TIER 1/</dss-pathname>
+        <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Hour/C:000004|TIER 1/</dss-pathname>
+        <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Hour/C:000005|TIER 1/</dss-pathname>
+        <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Hour/C:000006|TIER 1/</dss-pathname>
+        <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Hour/C:000007|TIER 1/</dss-pathname>
+        <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Hour/C:000008|TIER 1/</dss-pathname>
+        <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Hour/C:000009|TIER 1/</dss-pathname>
+        <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Hour/C:000010|TIER 1/</dss-pathname>
+        <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Hour/C:000011|TIER 1/</dss-pathname>
+      </dss-pathnames>
+    </TemperatureTargetSet>
+  </TemperatureTargetSets>
+  <InitialConditions>
+    <Reservoir Name="Keswick Reservoir">
+      <Profile Name="2018-04-01" />
+    </Reservoir>
+    <Reservoir Name="Whiskeytown Lake">
+      <Profile Name="2018-03-07" />
+    </Reservoir>
+    <Reservoir Name="Shasta Lake">
+      <Profile Name="2019-03-11" />
+    </Reservoir>
+    <Reservoir Name="Lewiston Reservoir">
+      <Profile Name="2015-03-11" />
+    </Reservoir>
+    <Reservoir Name="Trinity Lake">
+      <Profile Name="2018-03-19" />
+    </Reservoir>
+  </InitialConditions>
+  <Operations>
+    <OperationsData Name="MAR50_WY2018v">
+      <Description />
+      <OperationsFile>forecast/CVP-ops/MAR50_WY2018v.xlsx</OperationsFile>
+    </OperationsData>
+  </Operations>
+  <Meteorology>
+    <MeteorologyData Name="Historical-2018">
+      <Description />
+      <MetDataType>Historic</MetDataType>
+      <Year>2018</Year>
+    </MeteorologyData>
+  </Meteorology>
+  <BoundaryConditions>
+    <BcData Name="MAR50_WY2018v-Historical-2018">
+      <Description />
+      <Output-DSS-File>forecast\simGroups\F2018\bc.dss</Output-DSS-File>
+      <f-part>MAR50_WY2018v-Historical-2018</f-part>
+      <Operations>MAR50_WY2018v</Operations>
+      <Meteorology>Historical-2018</Meteorology>
+    </BcData>
+  </BoundaryConditions>
+  <EnsembleSets>
+    <Simulation>
+      ResSim-F2018
+      <EnsembleSet Name="MAR50_WY2018v-Historical-2018-SHASTA - TIER 1">
+        <Description />
+        <BcData>MAR50_WY2018v-Historical-2018</BcData>
+        <TemperatureTargetSet>SHASTA - TIER 1</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="0" Step="10" />
+        </ComputedMembers>
+        <MembersToCompute>11</MembersToCompute>
+      </EnsembleSet>
+    </Simulation>
+  </EnsembleSets>
+  <EnsembleSetIndexing>
+    <Simulation Name="ResSim-F2018">
+      <EnsembleSet Name="MAR50_WY2018v-Historical-2018-SHASTA - TIER 1">
+        <CollectionStart>0</CollectionStart>
+        <CollectionEnd>499</CollectionEnd>
+      </EnsembleSet>
+    </Simulation>
+  </EnsembleSetIndexing>
+</ForecastSimulationGroup>
+

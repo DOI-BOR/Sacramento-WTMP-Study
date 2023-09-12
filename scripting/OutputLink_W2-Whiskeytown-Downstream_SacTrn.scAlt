@@ -32,10 +32,10 @@
     </DataLocation>
   </DataLocations>
   <OutputDataLocations>
-    <DataLocation Name="AddedTimeSeries" Class="hec2.model.DataLocation" DssPath="//AddedTimeSeries/Flow//1HOUR/alt:ap:Scripting-OutputLink_W2-Whiskeyt/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="AddedTimeSeries" Class="hec2.model.DataLocation" DssPath="//AddedTimeSeries/Flow//1HOUR/C:000000|altName:apName:Scripting-OutputLink_W2-Whiskeyt/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="OutputLink_W2-Whiskeytown-Downstream_SacTrn" Program="Scripting" />
     </DataLocation>
-    <DataLocation Name="SpringCreek_Heated" Class="hec2.model.DataLocation" DssPath="//SpringCreek_Heated/Temp//1HOUR/alt:ap:Scripting-OutputLink_W2-Whiskeyt/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="SpringCreek_Heated" Class="hec2.model.DataLocation" DssPath="//SpringCreek_Heated/Temp//1HOUR/C:000000|altName:apName:Scripting-OutputLink_W2-Whiskeyt/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="OutputLink_W2-Whiskeytown-Downstream_SacTrn" Program="Scripting" />
     </DataLocation>
   </OutputDataLocations>

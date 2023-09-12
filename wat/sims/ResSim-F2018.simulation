@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WatSimulation SimulationName="ResSim-F2018" Description="" FPart="ResSim:2018" HasComputed="false" ComputeError="true" Parent="ResSim-F2018" IsFrmSimulation="false">
+  <ModelAlternatives ModelAlternativeCount="3">
+    <ModelAlternative0 Program="Scripting" Name="Pre-Process_ResSim_SacTrn" File="scripting/Pre-Process_ResSim_SacTrn.scAlt">
+      <Description>
+        <desc cnt="0" value="Pre-process any data into required ResSim-specific records for forecast simulations" />
+      </Description>
+      <LastComputeTime Date="31 December 1899, 24:00:00" />
+    </ModelAlternative0>
+    <ModelAlternative1 Program="ResSim" Name="RSSacTrn" File="rss/RSSacTrn.ralt">
+      <Description />
+      <LastComputeTime Date="31 December 1899, 24:00" />
+    </ModelAlternative1>
+    <ModelAlternative2 Program="Scripting" Name="Post-Process_ResSim_SacTrn" File="scripting/Post-Process_ResSim_SacTrn.scAlt">
+      <Description>
+        <desc cnt="0" value="Adds tunnel heating to output values to provide a record of end-tunnel temperatures" />
+      </Description>
+      <LastComputeTime Date="31 December 1899, 24:00" />
+    </ModelAlternative2>
+  </ModelAlternatives>
+  <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />
+</WatSimulation>
+

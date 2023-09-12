@@ -1,0 +1,70 @@
+location,parameter,dss file,dss path
+Redding Airport,Air Temperature,forecast/simGroups/2018/bc.dss,/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/MAR50_WY2018v-Historical-2011/
+Redding Airport,Dewpoint Temperature,forecast/simGroups/2018/bc.dss,/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/MAR50_WY2018v-Historical-2011/
+Redding Airport,Shortwave Radiation,forecast/simGroups/2018/bc.dss,/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/MAR50_WY2018v-Historical-2011/
+Redding Airport,Cloudiness,forecast/simGroups/2018/bc.dss,/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/MAR50_WY2018v-Historical-2011/
+Redding Airport,Wind Speed,forecast/simGroups/2018/bc.dss,/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/MAR50_WY2018v-Historical-2011/
+Redding Airport,Wind Direction,forecast/simGroups/2018/bc.dss,/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND DIRECTION/DIR-WIND//1HOUR/MAR50_WY2018v-Historical-2011/
+Lewiston Res,Air Temperature,forecast/simGroups/2018/bc.dss,/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/MAR50_WY2018v-Historical-2011/
+Lewiston Res,Dewpoint Temperature,forecast/simGroups/2018/bc.dss,/MR Sac.-Lewiston Res./TCAC1 - Calc Data-Dew Point/Temp-DewPoint//1Hour/MAR50_WY2018v-Historical-2011/
+Lewiston Res,Shortwave Radiation,forecast/simGroups/2018/bc.dss,/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/MAR50_WY2018v-Historical-2011/
+Lewiston Res,Wind Speed,forecast/simGroups/2018/bc.dss,/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/MAR50_WY2018v-Historical-2011/
+Lewiston Res,Wind Direction,forecast/simGroups/2018/bc.dss,/MR SAC.-LEWISTON RES./TCAC1-WIND DIRECTION/DIR-WIND//1HOUR/MAR50_WY2018v-Historical-2011/
+Trinity River,Cloudiness,forecast/simGroups/2018/bc.dss,/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/MAR50_WY2018v-Historical-2011/
+SHASTA,INFLOW,forecast/simGroups/2018/bc.dss,//SHASTA/INFLOW//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,FLOW-IN,forecast/simGroups/2018/bc.dss,//SHASTA/FLOW-IN//1DAY/MAR50_WY2018v-Historical-2011/
+SHASTA,EST. EVAP.,forecast/simGroups/2018/bc.dss,//SHASTA/EST. EVAP.//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,TOTAL SHASTA RELEASE,forecast/simGroups/2018/bc.dss,//SHASTA/TOTAL SHASTA RELEASE//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,FLOW-RELEASE,forecast/simGroups/2018/bc.dss,//SHASTA/FLOW-RELEASE//1HOUR/MAR50_WY2018v-Historical-2011/
+SHASTA,FLOW-KESWICK-CFS,forecast/simGroups/2018/bc.dss,//SHASTA/FLOW-KESWICK-CFS//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,KESWICK-TAF,forecast/simGroups/2018/bc.dss,//SHASTA/KESWICK-TAF//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,FLOW-KESWICK TARGET (CFS),forecast/simGroups/2018/bc.dss,//SHASTA/FLOW-KESWICK TARGET (CFS)//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,STORAGE,forecast/simGroups/2018/bc.dss,//SHASTA/STORAGE//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,ELEVATION (FEET),forecast/simGroups/2018/bc.dss,//SHASTA/ELEVATION (FEET)//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,AREA (ACRES),forecast/simGroups/2018/bc.dss,//SHASTA/AREA (ACRES)//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,FLOW-WILKIN'S TARGET (CFS),forecast/simGroups/2018/bc.dss,//SHASTA/FLOW-WILKIN'S TARGET (CFS)//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,FLOW-KESWICK TO WILKINS ACC-DEP (CFS),forecast/simGroups/2018/bc.dss,//SHASTA/FLOW-KESWICK TO WILKINS ACC-DEP (CFS)//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,FLOW-FLOW@WILKIN'S SLOUGH (CFS),forecast/simGroups/2018/bc.dss,//SHASTA/FLOW-FLOW@WILKIN'S SLOUGH (CFS)//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,SAC AFRP,forecast/simGroups/2018/bc.dss,//SHASTA/SAC AFRP//1MON/MAR50_WY2018v-Historical-2011/
+SHASTA,FLOW-ACC-DEP,forecast/simGroups/2018/bc.dss,/SHASTA/SHASTA/FLOW-ACC-DEP//1DAY/MAR50_WY2018v-Historical-2011/
+Shasta-Sac-in,FLOW-IN,forecast/simGroups/2018/bc.dss,//Shasta-Sac-in/FLOW-IN//1DAY/MAR50_WY2018v-Historical-2011/
+Shasta-Pit-in,FLOW-IN,forecast/simGroups/2018/bc.dss,//Shasta-Pit-in/FLOW-IN//1DAY/MAR50_WY2018v-Historical-2011/
+Shasta-McCloud-in,FLOW-IN,forecast/simGroups/2018/bc.dss,//Shasta-McCloud-in/FLOW-IN//1DAY/MAR50_WY2018v-Historical-2011/
+Shasta-Sulanharas-in,FLOW-IN,forecast/simGroups/2018/bc.dss,//Shasta-Sulanharas-in/FLOW-IN//1DAY/MAR50_WY2018v-Historical-2011/
+Shasta-Sac-in,TEMP-WATER,forecast/simGroups/2018/bc.dss,//Shasta-Sac-in/TEMP-WATER//1HOUR/MAR50_WY2018v-Historical-2011/
+Shasta-Pit-in,TEMP-WATER,forecast/simGroups/2018/bc.dss,//Shasta-Pit-in/TEMP-WATER//1HOUR/MAR50_WY2018v-Historical-2011/
+Shasta-McCloud-in,TEMP-WATER,forecast/simGroups/2018/bc.dss,//Shasta-McCloud-in/TEMP-WATER//1HOUR/MAR50_WY2018v-Historical-2011/
+Whiskeytown,INFLOW,forecast/simGroups/2018/bc.dss,//Whiskeytown/INFLOW//1MON/MAR50_WY2018v-Historical-2011/
+Whiskeytown,EST. EVAP.,forecast/simGroups/2018/bc.dss,//Whiskeytown/EST. EVAP.//1MON/MAR50_WY2018v-Historical-2011/
+Whiskeytown,TOTAL RELEASE,forecast/simGroups/2018/bc.dss,//Whiskeytown/TOTAL RELEASE//1MON/MAR50_WY2018v-Historical-2011/
+Whiskeytown,SPRING CR.,forecast/simGroups/2018/bc.dss,//Whiskeytown/SPRING CR.//1MON/MAR50_WY2018v-Historical-2011/
+SPRING CREEK,FLOW-PP,forecast/simGroups/2018/bc.dss,//SPRING CREEK/FLOW-PP//1HOUR/MAR50_WY2018v-Historical-2011/
+Whiskeytown,STORAGE,forecast/simGroups/2018/bc.dss,//Whiskeytown/STORAGE//1MON/MAR50_WY2018v-Historical-2011/
+Whiskeytown,ELEVATION (FEET),forecast/simGroups/2018/bc.dss,//Whiskeytown/ELEVATION (FEET)//1MON/MAR50_WY2018v-Historical-2011/
+Whiskeytown,AREA (ACRES),forecast/simGroups/2018/bc.dss,//Whiskeytown/AREA (ACRES)//1MON/MAR50_WY2018v-Historical-2011/
+Whiskeytown,FLOW-CLEAR CREEK-CFS,forecast/simGroups/2018/bc.dss,//Whiskeytown/FLOW-CLEAR CREEK-CFS//1MON/MAR50_WY2018v-Historical-2011/
+Whiskeytown,CLEAR CREEK-TAF,forecast/simGroups/2018/bc.dss,//Whiskeytown/CLEAR CREEK-TAF//1MON/MAR50_WY2018v-Historical-2011/
+Whiskeytown,CC AFRP,forecast/simGroups/2018/bc.dss,//Whiskeytown/CC AFRP//1MON/MAR50_WY2018v-Historical-2011/
+TRINITY LAKE,INFLOW,forecast/simGroups/2018/bc.dss,/TRINITY RIVER/TRINITY LAKE/INFLOW//1MON/MAR50_WY2018v-Historical-2011/
+TRINITY LAKE,FLOW-IN,forecast/simGroups/2018/bc.dss,/TRINITY RIVER/TRINITY LAKE/FLOW-IN//1DAY/MAR50_WY2018v-Historical-2011/
+TRINITY LAKE,VOLUME-EST EVAPORATION,forecast/simGroups/2018/bc.dss,/TRINITY RIVER/TRINITY LAKE/VOLUME-EST EVAPORATION//1MON/MAR50_WY2018v-Historical-2011/
+TRINITY LAKE,VOLUME-RELEASE,forecast/simGroups/2018/bc.dss,/TRINITY RIVER/TRINITY LAKE/VOLUME-RELEASE//1MON/MAR50_WY2018v-Historical-2011/
+TRINITY LAKE,FLOW-RELEASE,forecast/simGroups/2018/bc.dss,/TRINITY RIVER/TRINITY LAKE/FLOW-RELEASE//1HOUR/MAR50_WY2018v-Historical-2011/
+Trinity-Clair Engle,FLOW-RIVER REL. - CFS,forecast/simGroups/2018/bc.dss,//Trinity-Clair Engle/FLOW-RIVER REL. - CFS//1MON/MAR50_WY2018v-Historical-2011/
+Trinity-Clair Engle,RIVER REL. - TAF,forecast/simGroups/2018/bc.dss,//Trinity-Clair Engle/RIVER REL. - TAF//1MON/MAR50_WY2018v-Historical-2011/
+LEWISTON RESERVOIR,VOLUME-CLEAR CREEK DIVERSION,forecast/simGroups/2018/bc.dss,/TRINITY RIVER/LEWISTON RESERVOIR/VOLUME-CLEAR CREEK DIVERSION//1MON/MAR50_WY2018v-Historical-2011/
+CARR POWERHOUSE,FLOW-RELEASE,forecast/simGroups/2018/bc.dss,/CLEAR CREEK/CARR POWERHOUSE/FLOW-RELEASE//1HOUR/MAR50_WY2018v-Historical-2011/
+Trinity-Clair Engle,ACTUAL STORAGE,forecast/simGroups/2018/bc.dss,//Trinity-Clair Engle/ACTUAL STORAGE//1MON/MAR50_WY2018v-Historical-2011/
+Trinity-Clair Engle,ELEVATION (FEET),forecast/simGroups/2018/bc.dss,//Trinity-Clair Engle/ELEVATION (FEET)//1MON/MAR50_WY2018v-Historical-2011/
+Trinity-Clair Engle,AREA (ACRES),forecast/simGroups/2018/bc.dss,//Trinity-Clair Engle/AREA (ACRES)//1MON/MAR50_WY2018v-Historical-2011/
+TRINITY LAKE,FLOW-ACC-DEP,forecast/simGroups/2018/bc.dss,/TRINITY RIVER/TRINITY LAKE/FLOW-ACC-DEP//1DAY/MAR50_WY2018v-Historical-2011/
+EF TRINITY,FLOW-IN,forecast/simGroups/2018/bc.dss,//EF TRINITY/FLOW-IN//1DAY/MAR50_WY2018v-Historical-2011/
+STUART FORK,FLOW-IN,forecast/simGroups/2018/bc.dss,//STUART FORK/FLOW-IN//1DAY/MAR50_WY2018v-Historical-2011/
+SWIFT CR,FLOW-IN,forecast/simGroups/2018/bc.dss,//SWIFT CR/FLOW-IN//1DAY/MAR50_WY2018v-Historical-2011/
+TRINITY RIVER,FLOW-IN,forecast/simGroups/2018/bc.dss,//TRINITY RIVER/FLOW-IN//1DAY/MAR50_WY2018v-Historical-2011/
+EF TRINITY,TEMP-WATER,forecast/simGroups/2018/bc.dss,//EF TRINITY/TEMP-WATER//1HOUR/MAR50_WY2018v-Historical-2011/
+STUART FORK,TEMP-WATER,forecast/simGroups/2018/bc.dss,//STUART FORK/TEMP-WATER//1HOUR/MAR50_WY2018v-Historical-2011/
+SWIFT CR,TEMP-WATER,forecast/simGroups/2018/bc.dss,//SWIFT CR/TEMP-WATER//1HOUR/MAR50_WY2018v-Historical-2011/
+TRINITY RIVER,TEMP-WATER,forecast/simGroups/2018/bc.dss,//TRINITY RIVER/TEMP-WATER//1HOUR/MAR50_WY2018v-Historical-2011/
+ZERO-BY-DAY,FLOW-ZERO,forecast/simGroups/2018/bc.dss,//ZERO-BY-DAY/FLOW-ZERO//1DAY/MAR50_WY2018v-Historical-2011/
+ZERO-BY-HOUR,FLOW-ZERO,forecast/simGroups/2018/bc.dss,//ZERO-BY-HOUR/FLOW-ZERO//1Hour/MAR50_WY2018v-Historical-2011/

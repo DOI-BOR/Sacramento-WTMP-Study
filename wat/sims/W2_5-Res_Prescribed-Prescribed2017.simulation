@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<WatSimulation SimulationName="W2 5-Res Prescribed-Prescribed2017" Description="" FPart="W2 5-Res P:2018" HasComputed="false" ComputeError="true" Parent="W2 5-Res Prescribed-Prescribed2017" LastComputedBy="benjamin" LastComputedDate="1694472076345" IsFrmSimulation="false">
+<WatSimulation SimulationName="W2 5-Res Prescribed-Prescribed2017" Description="" FPart="W2 5-Res P:2018" HasComputed="true" ComputeError="false" Parent="W2 5-Res Prescribed-Prescribed2017" LastComputedBy="benjamin" LastComputedDate="1695853830567" IsFrmSimulation="false">
   <ModelAlternatives ModelAlternativeCount="11">
     <ModelAlternative0 Program="Scripting" Name="Pre-Process_W2_5-Res_Prescribed_SacTrn" File="scripting/Pre-Process_W2_5-Res_Prescribed_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Prepare input data for W2 models(s), for all 5 Sacramento/Trinity system reservoirs.  1) Determine simulation year and copy W2 configuration files from shared/W2_annual_configs, if it exists" />
       </Description>
-      <LastComputeTime Date="27 September 2023, 03:35:48" />
+      <LastComputeTime Date="27 September 2023, 22:30:10" />
     </ModelAlternative0>
     <ModelAlternative1 Program="CeQualW2" Name="W2 Trinity Prescribed" File="CeQual-W2/W2 Trinity Prescribed/W2 Trinity Prescribed/W2_Trinity_Prescribed.w2Alt">
       <Description />
-      <LastComputeTime Date="26 September 2023, 22:44" />
+      <LastComputeTime Date="27 September 2023, 22:30:27" />
     </ModelAlternative1>
     <ModelAlternative2 Program="Scripting" Name="OutputLink_W2-Trinity-W2-Lewiston_SacTrn" File="scripting/OutputLink_W2-Trinity-W2-Lewiston_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Output processing from W2 Trinity Lake model into boundary conditions for W2 Lewiston Reservoir model" />
       </Description>
-      <LastComputeTime Date="27 September 2023, 03:35:51" />
+      <LastComputeTime Date="27 September 2023, 22:30:30" />
     </ModelAlternative2>
     <ModelAlternative3 Program="CeQualW2" Name="W2 Lewiston Prescribed" File="CeQual-W2/W2 Lewiston Prescribed/W2 Lewiston Prescribed/W2_Lewiston_Prescribed.w2Alt">
       <Description />
@@ -25,7 +25,7 @@
       <Description>
         <desc cnt="0" value="Postprocess output from W2 Leiston Reservoir model for use my downstream componetents: 1) Flow-weighed averaging of Lewiston Dam outputs; 2) Tunnel heating in the Clear Creek tunnel to Whiskeytown Reservoir." />
       </Description>
-      <LastComputeTime Date="27 September 2023, 03:35:51" />
+      <LastComputeTime Date="27 September 2023, 03:35" />
     </ModelAlternative4>
     <ModelAlternative5 Program="CeQualW2" Name="W2 Whiskeytown Prescribed" File="CeQual-W2/W2 Whiskeytown Prescribed/W2 Whiskeytown Prescribed/W2_Whiskeytown_Prescribed.w2Alt">
       <Description />
@@ -35,7 +35,7 @@
       <Description>
         <desc cnt="0" value="Postprocessing of output from W2 Whiskeytown Reservoir for use my downstream model compontents: 1) Add Spring Creek Debris Dam flow to Spring Creek tunnel outflow, to keep Keswick balanced; 2) Add contant tunnel heating to the Spring Creek tunnel outflow temperature." />
       </Description>
-      <LastComputeTime Date="27 September 2023, 03:35:51" />
+      <LastComputeTime Date="27 September 2023, 03:35" />
     </ModelAlternative6>
     <ModelAlternative7 Program="CeQualW2" Name="W2 Shasta Prescribed" File="CeQual-W2/W2 Shasta Prescribed/W2 Shasta Prescribed/W2_Shasta_Prescribed.w2Alt">
       <Description />
@@ -49,11 +49,11 @@
       <Description>
         <desc cnt="0" value="Pre-process DMS prescribed data into required ResSim-specific records" />
       </Description>
-      <LastComputeTime Date="27 September 2023, 03:35:55" />
+      <LastComputeTime Date="27 September 2023, 03:35" />
     </ModelAlternative9>
     <ModelAlternative10 Program="ResSim" Name="RSSacTrnRv" File="rss/RSSacTrnRv.ralt">
       <Description />
-      <LastComputeTime Date="31 December 1899, 24:00:00" />
+      <LastComputeTime Date="31 December 1899, 24:00" />
     </ModelAlternative10>
   </ModelAlternatives>
   <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />

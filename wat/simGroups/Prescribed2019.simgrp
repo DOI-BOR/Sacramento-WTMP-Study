@@ -7,6 +7,10 @@
       <Name>W2 5-Res Prescribed-Prescribed2019</Name>
       <Class>hec2.wat.model.WatSimulation</Class>
     </Simulation>
+    <Simulation>
+      <Name>ResSim Prescribed-Prescribed2019</Name>
+      <Class>hec2.wat.model.WatSimulation</Class>
+    </Simulation>
   </Simulations>
   <ComputeTypes />
 </SimulationGroup>

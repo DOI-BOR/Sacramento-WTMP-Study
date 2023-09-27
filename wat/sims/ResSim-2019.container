@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<SimulationContainer SimulationContainerName="ResSim-2019" Description="" AnalysisPeriod="2019" Alternative="ResSim" ProgramOrder="ResSim Only" WarmupTimeSteps="0" SimulationCount="1">
-  <Simulation0 SimulationName="ResSim-2019" />
-</SimulationContainer>
-

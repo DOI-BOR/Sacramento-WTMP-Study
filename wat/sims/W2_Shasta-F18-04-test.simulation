@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<WatSimulation SimulationName="W2 Shasta-F18-04-test" Description="" FPart="W2 Shasta:2018-03-FC" HasComputed="true" ComputeError="false" Parent="W2 Shasta-F18-04-test" LastComputedBy="benjamin" LastComputedDate="1695238395868" IsFrmSimulation="false">
+<WatSimulation SimulationName="W2 Shasta-F18-04-test" Description="" FPart="W2 Shasta:2018-03-FC" HasComputed="false" ComputeError="true" Parent="W2 Shasta-F18-04-test" LastComputedBy="benjamin" LastComputedDate="1695238395868" IsFrmSimulation="false">
   <ModelAlternatives ModelAlternativeCount="2">
     <ModelAlternative0 Program="Scripting" Name="Pre-Process_ResSim_SacTrn" File="scripting/Pre-Process_ResSim_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Pre-process any data into required ResSim-specific records for forecast simulations" />
       </Description>
-      <LastComputeTime Date="20 September 2023, 19:19:06" />
+      <LastComputeTime Date="26 September 2023, 18:50:09" />
     </ModelAlternative0>
     <ModelAlternative1 Program="CeQualW2" Name="W2 Shasta" File="CeQual-W2/W2/W2 Shasta/W2_Shasta.w2Alt">
       <Description />
-      <LastComputeTime Date="20 September 2023, 19:33:15" />
+      <LastComputeTime Date="31 December 1899, 24:00:00" />
     </ModelAlternative1>
   </ModelAlternatives>
   <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />

@@ -7,7 +7,6 @@ import hec.heclib.dss
 import hec.heclib.util.HecTime as HecTime
 import hec.io.TimeSeriesContainer as tscont
 import hec.hecmath.TimeSeriesMath as tsmath
-from hec.script import MessageBox
 
 import usbr.wat.plugins.actionpanel.model.forecast as fc
 
@@ -75,7 +74,7 @@ def build_BC_data_sets(AP_start_time, AP_end_time, BC_F_part, BC_output_DSS_file
 		DSS_map_filename = os.path.join(Project.getCurrentProject().getWorkspacePath(), DSS_map_filename)
 
 	print "\n########"
-	print "\tGenerating Boundary Conditions for Shasta/Trinity models"
+	print "\tRunning Boundary Condition generation process"
 	print "########\n"
 
 	print "CVP Ops Data file: %s"%ops_file_name
@@ -504,7 +503,6 @@ def create_ops_BC_data(target_year, ops_file_name, start_time, end_time, BC_outp
 			tsm_list.append(tsm)
 	tsm_list.append(tsmath_acc_dep)
 	tsm_list.append(tsmath_bal_trnty)
-	balance_list.append(tsmath_bal_trnty)
 
 	########################
 	# Disaggregate Trinity Lake Tributary In Flows
@@ -640,16 +638,14 @@ def create_ops_BC_data(target_year, ops_file_name, start_time, end_time, BC_outp
 			tsmath_bal_whsky = tsmath_bal_whsky.subtract(tsmath_release_monthly)
 			tsmath_release = CVP.uniform_transform_monthly_to_hourly(tsmath_release_monthly)
 			tsmath_release.setPathname(tsmath_release_monthly.getContainer().fullName)
-			tsmath_release.setLocation("WHISKEYTOWN DAM")
 			tsmath_release.setTimeInterval("1HOUR")
 			tsmath_release.setParameterPart("FLOW-RELEASE")
 			tsmath_release.setVersion(BC_F_part)
-			tsm_list.append(tsmath_release)
+			tsm_list.append(tsmath_bal_whsky)
 		else:
 			tsm_list.append(tsm)
 	tsm_list.append(tsmath_acc_dep)
-	tsm_list.append(tsmath_bal_whsky)
-	balance_list.append(tsmath_bal_whsky)
+	tsm_list.append(tsmath_acc_dep)
 
 
 	########################
@@ -730,7 +726,6 @@ def create_ops_BC_data(target_year, ops_file_name, start_time, end_time, BC_outp
 
 	tsm_list.append(tsmath_acc_dep)
 	tsm_list.append(tsmath_bal_shasta)
-	balance_list.append(tsmath_bal_shasta)
 
 	########################
 	# Disaggregate Shasta Tributary In Flows
@@ -786,33 +781,6 @@ def create_ops_BC_data(target_year, ops_file_name, start_time, end_time, BC_outp
 		trib_DSS_files[fname].done()
 
 	########################
-	# Check balances
-	########################
-	msg = "Volume balance failed to close within 1,000 AF at these locations and times: \n"
-	exceed_list = []
-	for tsm_bal in balance_list:
-		balance_err = False
-		err_type_neg = False
-		if tsm_bal.max() > 1000:
-			balance_err = True
-		if tsm_bal.min() < -1000:
-			balance_err = True
-			err_type_neg = True
-		if balance_err:
-			if err_type_neg: 
-				exceed_list.append((tsm_bal.getContainer().location, tsm_bal.minDate()))
-			else: 
-				exceed_list.append((tsm_bal.getContainer().location, tsm_bal.maxDate()))
-	if len(exceed_list) > 0:
-		exTime = HecTime()
-		for item in exceed_list:
-			exTime.set(item[1])
-			msg += item[0] + ' @ ' + exTime.dateAndTime(4) + '\n'
-		msg += "There may be errors in the operations spreadsheet at these locations."
-		print msg
-		MessageBox.showWarning(msg, "Volume Closure Warning")
-
-	########################
 	# Zero-Flow Time Series
 	########################
 
@@ -839,42 +807,6 @@ def create_ops_BC_data(target_year, ops_file_name, start_time, end_time, BC_outp
 	tsmath_zero_flow_hour.setParameterPart("FLOW-ZERO")
 	tsmath_zero_flow_hour.setVersion(BC_F_part)
 	tsm_list.append(tsmath_zero_flow_hour)
-
-	tsmath_zero_gates_hour = tsmath.generateRegularIntervalTimeSeries(
-		"%s 0000"%(start_time.date(4)),
-		"%s 2400"%(end_time.date(4)),
-		"1HOUR", "0M", 0.0)
-	tsmath_zero_gates_hour.setUnits("Count")
-	tsmath_zero_gates_hour.setType("INST-VAL")
-	tsmath_zero_gates_hour.setTimeInterval("1Hour")
-	tsmath_zero_gates_hour.setLocation("ZERO-BY-HOUR")
-	tsmath_zero_gates_hour.setParameterPart("GATES-ZERO")
-	tsmath_zero_gates_hour.setVersion(BC_F_part)
-	tsm_list.append(tsmath_zero_gates_hour)
-
-	tsmath_one_gate_hour = tsmath.generateRegularIntervalTimeSeries(
-		"%s 0000"%(start_time.date(4)),
-		"%s 2400"%(end_time.date(4)),
-		"1HOUR", "0M", 1.0)
-	tsmath_one_gate_hour.setUnits("Count")
-	tsmath_one_gate_hour.setType("INST-VAL")
-	tsmath_one_gate_hour.setTimeInterval("1Hour")
-	tsmath_one_gate_hour.setLocation("ONE-BY-HOUR")
-	tsmath_one_gate_hour.setParameterPart("GATES-ONE")
-	tsmath_one_gate_hour.setVersion(BC_F_part)
-	tsm_list.append(tsmath_one_gate_hour)
-
-	tsmath_five_gates_hour = tsmath.generateRegularIntervalTimeSeries(
-		"%s 0000"%(start_time.date(4)),
-		"%s 2400"%(end_time.date(4)),
-		"1HOUR", "0M", 5.0)
-	tsmath_five_gates_hour.setUnits("Count")
-	tsmath_five_gates_hour.setType("INST-VAL")
-	tsmath_five_gates_hour.setTimeInterval("1Hour")
-	tsmath_five_gates_hour.setLocation("FIVE-BY-HOUR")
-	tsmath_five_gates_hour.setParameterPart("GATES-FIVE")
-	tsmath_five_gates_hour.setVersion(BC_F_part)
-	tsm_list.append(tsmath_five_gates_hour)
 
 	for tsmath_item in tsm_list:
 		rv_lines.append("%s,%s,%s,%s"%(

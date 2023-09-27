@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelLinking>
+  <Name>
+    test_prescribed
+    <ModelAlternative Program="Scripting" Name="Pre-Process_ResSim_SacTrnPO" File="scripting/Pre-Process_ResSim_SacTrnPO.scAlt">
+      <Description>
+        <desc cnt="0" value="Pre-process DMS prescribed data into required ResSim-specific records" />
+      </Description>
+      <DataLocations />
+    </ModelAlternative>
+  </Name>
+</ModelLinking>
+

@@ -112,43 +112,18 @@
   <EnsembleSets>
     <Simulation>
       ResSim-F18-04-test
-      <EnsembleSet Name="APR90_WY2018v-Historical-2018-SHASTA - TIER 1">
+      <EnsembleSet Name="APR50_WY2018v-Historical-2018-SHASTA - TIER 1">
         <Description />
-        <BcData>APR90_WY2018v-Historical-2018</BcData>
-        <TemperatureTargetSet>SHASTA - TIER 1</TemperatureTargetSet>
-        <ComputedMembers>
-          <intArray Length="1" Step="10">
-            <I Range="0-1" Data="1" />
-          </intArray>
-        </ComputedMembers>
-        <MembersToCompute>1</MembersToCompute>
-      </EnsembleSet>
-      <EnsembleSet Name="APR90_WY2018v-Warm Summer-2017-SHASTA - TIER 1">
-        <Description />
-        <BcData>APR90_WY2018v-Warm Summer-2017</BcData>
+        <BcData>APR50_WY2018v-Historical-2018</BcData>
         <TemperatureTargetSet>SHASTA - TIER 1</TemperatureTargetSet>
         <ComputedMembers>
           <intArray Length="0" Step="10" />
         </ComputedMembers>
-        <MembersToCompute>2-4,3,9</MembersToCompute>
-      </EnsembleSet>
-    </Simulation>
-    <Simulation>
-      W2 Shasta-F18-04-test
-      <EnsembleSet Name="APR90_WY2018v-Historical-2018-SHASTA - TIER 1">
-        <Description />
-        <BcData>APR90_WY2018v-Historical-2018</BcData>
-        <TemperatureTargetSet>SHASTA - TIER 1</TemperatureTargetSet>
-        <ComputedMembers>
-          <intArray Length="1" Step="10">
-            <I Range="0-1" Data="1" />
-          </intArray>
-        </ComputedMembers>
         <MembersToCompute>1</MembersToCompute>
       </EnsembleSet>
-      <EnsembleSet Name="APR90_WY2018v-Warm Summer-2017-SHASTA - TIER 1">
+      <EnsembleSet Name="APR50_WY2018v-Warm Summer-2017-SHASTA - TIER 1">
         <Description />
-        <BcData>APR90_WY2018v-Warm Summer-2017</BcData>
+        <BcData>APR50_WY2018v-Warm Summer-2017</BcData>
         <TemperatureTargetSet>SHASTA - TIER 1</TemperatureTargetSet>
         <ComputedMembers>
           <intArray Length="0" Step="10" />
@@ -156,12 +131,21 @@
         <MembersToCompute />
       </EnsembleSet>
     </Simulation>
+    <Simulation>W2 Shasta-F18-04-test</Simulation>
   </EnsembleSets>
   <EnsembleSetIndexing>
     <Simulation Name="ResSim-F18-04-test">
       <EnsembleSet Name="APR90_WY2018v-Warm Summer-2017-SHASTA - TIER 1">
         <CollectionStart>500</CollectionStart>
         <CollectionEnd>999</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="APR50_WY2018v-Historical-2018-SHASTA - TIER 1">
+        <CollectionStart>1000</CollectionStart>
+        <CollectionEnd>1499</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="APR50_WY2018v-Warm Summer-2017-SHASTA - TIER 1">
+        <CollectionStart>1500</CollectionStart>
+        <CollectionEnd>1999</CollectionEnd>
       </EnsembleSet>
       <EnsembleSet Name="APR90_WY2018v-Historical-2018-SHASTA - TIER 1">
         <CollectionStart>0</CollectionStart>

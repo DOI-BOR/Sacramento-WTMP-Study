@@ -734,38 +734,6 @@
             </DataLocation>
           </DownStreamLocation>
         </DataLocation>
-        <DataLocation Name="Global-TCD_target" Class="hec2.model.DataLocation" DssPath="//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/" ComputeType="Computed" Model="DSS File" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="ZERO-BY-HOUR" Class="hec2.model.DssDataLocation" DssPath="//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/" ComputeType="Computed" Parameter="FLOW-ZERO" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="Global-Whiskeytown_target" Class="hec2.model.DataLocation" DssPath="//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/" ComputeType="Computed" Model="DSS File" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="ZERO-BY-HOUR" Class="hec2.model.DssDataLocation" DssPath="//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/" ComputeType="Computed" Parameter="FLOW-ZERO" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="Global-Whiskeytown_Upper_Gate_open" Class="hec2.model.DataLocation" DssPath="//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/" ComputeType="Computed" Model="DSS File" Parameter="Count" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="ZERO-BY-HOUR" Class="hec2.model.DssDataLocation" DssPath="//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/" ComputeType="Computed" Parameter="FLOW-ZERO" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="Global-Total_TCDM_gates_open" Class="hec2.model.DataLocation" DssPath="//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/" ComputeType="Computed" Model="DSS File" Parameter="Count" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="ZERO-BY-HOUR" Class="hec2.model.DssDataLocation" DssPath="//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/" ComputeType="Computed" Parameter="FLOW-ZERO" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
         <DataLocation Name="WQ-Lewiston Met-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="RSSacTrn" Program="ResSim" />
           <DownStreamLocation>
@@ -1042,6 +1010,38 @@
           <ModelAlternative Name="RSSacTrn" Program="ResSim" />
           <DownStreamLocation>
             <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="Global-Whiskeytown_Upper_Gate_open" Class="hec2.model.DataLocation" DssPath="//ONE-BY-HOUR/GATES-ONE//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Count" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="ONE-BY-HOUR" Class="hec2.model.DssDataLocation" DssPath="//ONE-BY-HOUR/GATES-ONE//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="GATES-ONE" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="Global-TCD_target" Class="hec2.model.DataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/sactrn_bc_script/" ComputeType="Computed" Model="DSS File" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/sactrn_bc_script/" ComputeType="Computed" Parameter="TEMP-WATER-TARGET" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="Global-Whiskeytown_target" Class="hec2.model.DataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/sactrn_bc_script/" ComputeType="Computed" Model="DSS File" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/sactrn_bc_script/" ComputeType="Computed" Parameter="TEMP-WATER-TARGET" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="Global-Total_TCDM_gates_open" Class="hec2.model.DataLocation" DssPath="//FIVE-BY-HOUR/GATES-FIVE//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Count" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="FIVE-BY-HOUR" Class="hec2.model.DssDataLocation" DssPath="//FIVE-BY-HOUR/GATES-FIVE//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="GATES-FIVE" OutOfDate="false" PrevModelIndex="0">
               <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
             </DataLocation>
           </DownStreamLocation>

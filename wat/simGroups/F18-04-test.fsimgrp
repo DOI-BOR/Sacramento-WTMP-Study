@@ -126,9 +126,11 @@
         <BcData>APR50_WY2018v-Warm Summer-2017</BcData>
         <TemperatureTargetSet>SHASTA - TIER 1</TemperatureTargetSet>
         <ComputedMembers>
-          <intArray Length="0" Step="10" />
+          <intArray Length="1" Step="10">
+            <I Range="0-1" Data="1" />
+          </intArray>
         </ComputedMembers>
-        <MembersToCompute />
+        <MembersToCompute>1</MembersToCompute>
       </EnsembleSet>
     </Simulation>
     <Simulation>

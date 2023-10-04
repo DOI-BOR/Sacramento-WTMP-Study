@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<WatSimulation SimulationName="W2 Shasta Prescribed-Prescribed2014" Description="" FPart="W2 Shasta :2016" HasComputed="true" ComputeError="false" Parent="W2 Shasta Prescribed-Prescribed2014" LastComputedBy="benjamin" LastComputedDate="1696441620826" IsFrmSimulation="false">
+<WatSimulation SimulationName="W2 Shasta Prescribed-Prescribed2014" Description="" FPart="W2 Shasta :2016" HasComputed="true" ComputeError="false" Parent="W2 Shasta Prescribed-Prescribed2014" LastComputedBy="benjamin" LastComputedDate="1696447326265" IsFrmSimulation="false">
   <ModelAlternatives ModelAlternativeCount="2">
     <ModelAlternative0 Program="Scripting" Name="Pre-Process_W2_5-Res_Prescribed_SacTrn" File="scripting/Pre-Process_W2_5-Res_Prescribed_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Prepare input data for W2 models(s), for all 5 Sacramento/Trinity system reservoirs.  1) Determine simulation year and copy W2 configuration files from shared/W2_annual_configs, if it exists" />
       </Description>
-      <LastComputeTime Date="4 October 2023, 17:26:08" />
+      <LastComputeTime Date="4 October 2023, 19:14:15" />
     </ModelAlternative0>
     <ModelAlternative1 Program="CeQualW2" Name="W2 Shasta Prescribed" File="CeQual-W2/W2 Shasta Prescribed/W2 Shasta Prescribed/W2_Shasta_Prescribed.w2Alt">
       <Description />
-      <LastComputeTime Date="4 October 2023, 17:47:00" />
+      <LastComputeTime Date="4 October 2023, 19:22:06" />
     </ModelAlternative1>
   </ModelAlternatives>
   <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />

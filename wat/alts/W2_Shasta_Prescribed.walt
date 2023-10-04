@@ -1,0 +1,6 @@
+WatAlternative
+Name=W2 Shasta Prescribed
+Description=For running an independant W2 model of Shasta Lake with all inputs prescribed (i.e. besides boundary/inital conditions, TCD date configuration/flows must also be supplied, either in properly-names W2 input files, or through linking).
+AlignmentName=Stream Alignment
+ConditionId=5
+NextNodeIndex=0

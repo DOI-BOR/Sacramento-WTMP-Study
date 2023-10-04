@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelLinking>
+  <Name>
+    W2 Shasta Prescribed-Prescribed2014
+    <ModelAlternative Program="Scripting" Name="Pre-Process_W2_5-Res_Prescribed_SacTrn" File="scripting/Pre-Process_W2_5-Res_Prescribed_SacTrn.scAlt">
+      <Description>
+        <desc cnt="0" value="Prepare input data for W2 models(s), for all 5 Sacramento/Trinity system reservoirs.  1) Determine simulation year and copy W2 configuration files from shared/W2_annual_configs, if it exists" />
+      </Description>
+      <DataLocations />
+    </ModelAlternative>
+    <ModelAlternative Program="CeQualW2" Name="W2 Shasta Prescribed" File="CeQual-W2/W2 Shasta Prescribed/W2 Shasta Prescribed/W2_Shasta_Prescribed.w2Alt">
+      <Description />
+      <DataLocations>
+        <DataLocation Name="Auto Port Selection" Class="hec2.model.DataLocation" DssPath="/W2:dynsplit_selective%X%.npt/Auto Port Selection/Temp-Target//1HOUR/alt:ap:CeQualW2-Auto Port Selection/" ComputeType="Computed" Parameter="Temp-Target" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 14" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 14/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 14/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 15" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 15/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 15/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 13" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 13/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 13/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 16" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 16/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 16/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="WB 1 Vertical Profile" Class="hec2.model.DataLocation" DssPath="/W2:Vpr.npt/WB 1 Vertical Profile/Temp//1HOUR/alt:ap:CeQualW2-WB 1 Vertical Profile/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 3 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br3.npt/Branch 3 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 3 Inflow/" ComputeType="Computed" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br1.npt/Branch 1 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 1 Inflow/" ComputeType="Computed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="WB 1 Bathymetry" Class="hec2.model.DataLocation" DssPath="/W2:Shasta_Lake_bathy.npt/WB 1 Bathymetry/Elev-ELWS//1HOUR/alt:ap:CeQualW2-WB 1 Bathymetry/" ComputeType="Computed" Parameter="Elev-ELWS" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br1.npt/Branch 1 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 1 Inflow/" ComputeType="Computed" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 4 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br4.npt/Branch 4 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 4 Inflow/" ComputeType="Computed" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 19" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 19/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 19/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 17" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 17/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 17/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 2 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br2.npt/Branch 2 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 2 Inflow/" ComputeType="Computed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 6" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 6/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 6/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 18" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 18/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 18/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 20" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 20/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 20/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 7" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 7/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 7/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 21" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 21/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 21/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 22" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 22/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 22/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST.npt/WB 1 Met/WS//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="WS" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 4 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br4.npt/Branch 4 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 4 Inflow/" ComputeType="Computed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 5 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br5.npt/Branch 5 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 5 Inflow/" ComputeType="Computed" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 8" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 8/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 8/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:Qdt_br1.npt/Branch 1 Distr Trib/Flow-QDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Parameter="Flow-QDT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 5" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 5/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 5/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST.npt/WB 1 Met/TAIR//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="TAIR" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 9" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 9/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 9/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 3 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br3.npt/Branch 3 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 3 Inflow/" ComputeType="Computed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 4" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 4/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 4/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 23" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 23/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 23/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 10" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 10/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 10/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 5 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:qin_br5.npt/Branch 5 Inflow/Flow-QIN//1HOUR/alt:ap:CeQualW2-Branch 5 Inflow/" ComputeType="Computed" Parameter="Flow-QIN" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 3" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 3/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 3/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST.npt/WB 1 Met/Cloud//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="Cloud" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Distr Trib" Class="hec2.model.DataLocation" DssPath="/W2:tdt_br1.npt/Branch 1 Distr Trib/Temp-TDT//1HOUR/alt:ap:CeQualW2-Branch 1 Distr Trib/" ComputeType="Computed" Parameter="Temp-TDT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 2" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 2/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 2/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST.npt/WB 1 Met/PHI//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="PHI" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 12" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 12/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 12/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST.npt/WB 1 Met/SRO//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="SRO" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 2 Inflow" Class="hec2.model.DataLocation" DssPath="/W2:tin_br2.npt/Branch 2 Inflow/Temp-TIN//1HOUR/alt:ap:CeQualW2-Branch 2 Inflow/" ComputeType="Computed" Parameter="Temp-TIN" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 11" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 11/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 11/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="WB 1 Met" Class="hec2.model.DataLocation" DssPath="/W2:met_PST.npt/WB 1 Met/TDEW//1HOUR/alt:ap:CeQualW2-WB 1 Met/" ComputeType="Computed" Parameter="TDEW" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+        <DataLocation Name="Branch 1 Struct Withdrawal 1" Class="hec2.model.DataLocation" DssPath="/W2:Qout.npt/Branch 1 Struct Withdrawal 1/Flow-QOT//1HOUR/alt:ap:CeQualW2-Branch 1 Struct Withdrawal 1/" ComputeType="Computed" Parameter="Flow-QOT" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta Prescribed" Program="CeQualW2" />
+        </DataLocation>
+      </DataLocations>
+    </ModelAlternative>
+  </Name>
+</ModelLinking>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationGroup Name="Prescribed2014">
+  <Description />
+  <AnalysisPeriod>2014</AnalysisPeriod>
+  <Simulations>
+    <Simulation>
+      <Name>ResSim Prescribed-Prescribed2014</Name>
+      <Class>hec2.wat.model.WatSimulation</Class>
+    </Simulation>
+    <Simulation>
+      <Name>W2 Shasta Prescribed-Prescribed2014</Name>
+      <Class>hec2.wat.model.WatSimulation</Class>
+    </Simulation>
+  </Simulations>
+  <ComputeTypes />
+</SimulationGroup>
+

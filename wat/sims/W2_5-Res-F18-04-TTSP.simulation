@@ -1,64 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<WatSimulation SimulationName="W2 5-Res-F18-04-TTSP" Description="" FPart="W2 5-Res:2018-03-FC" HasComputed="false" ComputeError="true" Parent="W2 5-Res-F18-04-TTSP" LastComputedBy="benjamin" LastComputedDate="1702913607755" IsFrmSimulation="false">
+<WatSimulation SimulationName="W2 5-Res-F18-04-TTSP" Description="" FPart="W2 5-Res:2018-03-FC" HasComputed="false" ComputeError="true" Parent="W2 5-Res-F18-04-TTSP" LastComputedBy="benjamin" LastComputedDate="1703202644100" IsFrmSimulation="false">
   <ModelAlternatives ModelAlternativeCount="11">
     <ModelAlternative0 Program="Scripting" Name="Pre-Process_W2_5-Res_SacTrn" File="scripting/Pre-Process_W2_5-Res_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Process forecast data for use by W2-5Res coupled to a ResSim river model" />
       </Description>
-      <LastComputeTime Date="18 December 2023, 05:30:19" />
+      <LastComputeTime Date="21 December 2023, 23:51:51" />
     </ModelAlternative0>
     <ModelAlternative1 Program="CeQualW2" Name="W2 Trinity Prescribed" File="CeQual-W2/W2 Trinity Prescribed/W2 Trinity Prescribed/W2_Trinity_Prescribed.w2Alt">
       <Description />
-      <LastComputeTime Date="18 December 2023, 05:32:26" />
+      <LastComputeTime Date="20 December 2023, 21:43" />
     </ModelAlternative1>
     <ModelAlternative2 Program="Scripting" Name="OutputLink_W2-Trinity-W2-Lewiston_SacTrn" File="scripting/OutputLink_W2-Trinity-W2-Lewiston_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Output processing from W2 Trinity Lake model into boundary conditions for W2 Lewiston Reservoir model" />
       </Description>
-      <LastComputeTime Date="18 December 2023, 15:33:27" />
+      <LastComputeTime Date="20 December 2023, 21:15" />
     </ModelAlternative2>
     <ModelAlternative3 Program="CeQualW2" Name="W2 Lewiston Prescribed" File="CeQual-W2/W2 Lewiston Prescribed/W2 Lewiston Prescribed/W2_Lewiston_Prescribed.w2Alt">
       <Description />
-      <LastComputeTime Date="31 December 1899, 24:00:00" />
+      <LastComputeTime Date="20 December 2023, 21:48" />
     </ModelAlternative3>
     <ModelAlternative4 Program="Scripting" Name="OutputLink_W2-Lewiston-Downstream_SacTrn" File="scripting/OutputLink_W2-Lewiston-Downstream_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Postprocess output from W2 Leiston Reservoir model for use my downstream componetents: 1) Flow-weighed averaging of Lewiston Dam outputs; 2) Tunnel heating in the Clear Creek tunnel to Whiskeytown Reservoir." />
       </Description>
-      <LastComputeTime Date="31 December 1899, 24:00" />
+      <LastComputeTime Date="20 December 2023, 22:59" />
     </ModelAlternative4>
     <ModelAlternative5 Program="CeQualW2" Name="W2 Whiskeytown Prescribed" File="CeQual-W2/W2 Whiskeytown Prescribed/W2 Whiskeytown Prescribed/W2_Whiskeytown_Prescribed.w2Alt">
       <Description />
-      <LastComputeTime Date="31 December 1899, 24:00" />
+      <LastComputeTime Date="20 December 2023, 23:53" />
     </ModelAlternative5>
     <ModelAlternative6 Program="Scripting" Name="OutputLink_W2-Whiskeytown-Downstream_SacTrn" File="scripting/OutputLink_W2-Whiskeytown-Downstream_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Postprocessing of output from W2 Whiskeytown Reservoir for use my downstream model compontents: 1) Add Spring Creek Debris Dam flow to Spring Creek tunnel outflow, to keep Keswick balanced; 2) Add contant tunnel heating to the Spring Creek tunnel outflow temperature." />
       </Description>
-      <LastComputeTime Date="31 December 1899, 24:00" />
+      <LastComputeTime Date="21 December 2023, 23:51:51" />
     </ModelAlternative6>
     <ModelAlternative7 Program="CeQualW2" Name="W2 Shasta" File="CeQual-W2/W2/W2 Shasta/W2_Shasta.w2Alt">
       <Description />
-      <LastComputeTime Date="31 December 1899, 24:00" />
+      <LastComputeTime Date="21 December 2023, 01:56" />
     </ModelAlternative7>
     <ModelAlternative8 Program="CeQualW2" Name="W2 Keswick Prescribed" File="CeQual-W2/W2 Keswick Prescribed/W2 Keswick Prescribed/W2_Keswick_Prescribed.w2Alt">
       <Description />
-      <LastComputeTime Date="31 December 1899, 24:00" />
+      <LastComputeTime Date="22 December 2023, 17:40:43" />
     </ModelAlternative8>
     <ModelAlternative9 Program="Scripting" Name="Pre-Process_ResSim_SacTrn" File="scripting/Pre-Process_ResSim_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Pre-process any data into required ResSim-specific records for forecast simulations" />
       </Description>
-      <LastComputeTime Date="31 December 1899, 24:00" />
+      <LastComputeTime Date="22 December 2023, 17:40:49" />
     </ModelAlternative9>
     <ModelAlternative10 Program="ResSim" Name="RSSacTrnRv" File="rss/RSSacTrnRv.ralt">
       <Description />
-      <LastComputeTime Date="31 December 1899, 24:00" />
+      <LastComputeTime Date="31 December 1899, 24:00:00" />
     </ModelAlternative10>
   </ModelAlternatives>
   <SkipModelAltCompute>
+    <SkipModelAlt>Scripting-OutputLink_W2-Trinity-W2-Lewiston_SacTrn</SkipModelAlt>
+    <SkipModelAlt>CeQualW2-W2 Whiskeytown Prescribed</SkipModelAlt>
     <SkipModelAlt>CeQualW2-W2 Trinity Prescribed</SkipModelAlt>
-    <SkipModelAlt>Scripting-Pre-Process_W2_5-Res_SacTrn</SkipModelAlt>
+    <SkipModelAlt>CeQualW2-W2 Lewiston Prescribed</SkipModelAlt>
+    <SkipModelAlt>CeQualW2-W2 Shasta</SkipModelAlt>
+    <SkipModelAlt>Scripting-OutputLink_W2-Lewiston-Downstream_SacTrn</SkipModelAlt>
   </SkipModelAltCompute>
   <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />
 </WatSimulation>

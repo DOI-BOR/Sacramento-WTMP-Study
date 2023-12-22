@@ -797,7 +797,7 @@
         <DataLocation Name="Keswick Reservoir-Controlled Outlet" Class="hec2.model.DataLocation" DssPath="/SACRAMENTO RIVER/SHASTA LAKE/FLOW-KESWICK-CFS//1Month/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Lookback Release" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="RSSacTrnRv" Program="ResSim" />
           <DownStreamLocation>
-            <DataLocation Name="SHASTA LAKE" Class="hec2.model.DssDataLocation" DssPath="/SACRAMENTO RIVER/SHASTA LAKE/FLOW-KESWICK-CFS//1Month/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="FLOW-KESWICK-CFS" OutOfDate="false" PrevModelIndex="0">
+            <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="//SHASTA/FLOW-RELEASE-KESWICK-CFS//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="FLOW-RELEASE-KESWICK-CFS" OutOfDate="false" PrevModelIndex="0">
               <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
             </DataLocation>
           </DownStreamLocation>
@@ -1045,7 +1045,7 @@
         <DataLocation Name="Keswick Release" Class="hec2.model.DataLocation" DssPath="/SACRAMENTO RIVER/SHASTA LAKE/FLOW-KESWICK-CFS//1Month/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Input Time Series" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="RSSacTrnRv" Program="ResSim" />
           <DownStreamLocation>
-            <DataLocation Name="SHASTA LAKE" Class="hec2.model.DssDataLocation" DssPath="/SACRAMENTO RIVER/SHASTA LAKE/FLOW-KESWICK-CFS//1Month/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="FLOW-KESWICK-CFS" OutOfDate="false" PrevModelIndex="0">
+            <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="//SHASTA/FLOW-RELEASE-KESWICK-CFS//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="FLOW-RELEASE-KESWICK-CFS" OutOfDate="false" PrevModelIndex="0">
               <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
             </DataLocation>
           </DownStreamLocation>

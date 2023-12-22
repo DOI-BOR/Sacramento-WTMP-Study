@@ -730,15 +730,6 @@ def create_ops_BC_data(target_year, ops_file_name, start_time, end_time, BC_outp
 			tsmath_release.setParameterPart("FLOW-RELEASE")
 			tsmath_release.setVersion(BC_F_part)
 			tsm_list.append(tsmath_release)
-		elif ts.parameter.upper() == "FLOW-KESWICK-CFS":
-			tsmath_release_monthly = tsm
-			tsm_list.append(tsmath_release_monthly)
-			tsmath_release = CVP.uniform_transform_monthly_to_hourly(tsmath_release_monthly)
-			tsmath_release.setPathname(ts.fullName)
-			tsmath_release.setTimeInterval("1HOUR")
-			tsmath_release.setParameterPart("FLOW-RELEASE-KESWICK-CFS")
-			tsmath_release.setVersion(BC_F_part)
-			tsm_list.append(tsmath_release)
 		else:
 			tsm_list.append(tsm)
 

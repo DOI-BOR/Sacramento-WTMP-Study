@@ -17,7 +17,7 @@
     <DataLocation Name="DataLocation2" Class="hec2.model.DataLocation" DssPath="//DataLocation2/Flow//1HOUR/alt:ap:Scripting-OutputLink_W2-Whiskeyt/" ComputeType="Computed" Model="DSS File" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="OutputLink_W2-Whiskeytown-Downstream_SacTrn" Program="Scripting" />
       <DownStreamLocation>
-        <DataLocation Name="ZEROS" Class="hec2.model.DssDataLocation" DssPath="//ZEROS/flow//1Day/ZEROS/" ComputeType="Computed" Parameter="flow" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="ZEROS" Class="hec2.model.DssDataLocation" DssPath="//ZEROS/flow//1Hour/ZEROS/" ComputeType="Computed" Parameter="flow" OutOfDate="false" PrevModelIndex="0">
           <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
         </DataLocation>
       </DownStreamLocation>

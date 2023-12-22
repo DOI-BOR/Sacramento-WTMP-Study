@@ -1022,6 +1022,22 @@
             </DataLocation>
           </DownStreamLocation>
         </DataLocation>
+        <DataLocation Name="WQ(IC)-Shasta Lake-Sediment_Temperature" Class="hec2.model.DataLocation" DssPath="//Shasta Lake/DEPTH-TEMP//2006-05-04//" ComputeType="Computed" Model="DSS File" Parameter="Sediment Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="RSSacTrnPO" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="Shasta Lake" Class="hec2.model.DssDataLocation" DssPath="//Shasta Lake/DEPTH-TEMP//2006-05-04//" ComputeType="Computed" Parameter="DEPTH-TEMP" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/shasta_profs_watercourse_all.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ(IC)-Shasta Lake-Water_Temperature" Class="hec2.model.DataLocation" DssPath="//Shasta Lake/DEPTH-TEMP//2006-05-04//" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="RSSacTrnPO" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="Shasta Lake" Class="hec2.model.DssDataLocation" DssPath="//Shasta Lake/DEPTH-TEMP//2006-05-04//" ComputeType="Computed" Parameter="DEPTH-TEMP" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/shasta_profs_watercourse_all.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
       </DataLocations>
     </ModelAlternative>
   </Name>

@@ -56,7 +56,7 @@
     </DataLocation>
   </DataLocations>
   <OutputDataLocations>
-    <DataLocation Name="TrinityW2_FWA_Filt" Class="hec2.model.DataLocation" DssPath="//TrinityW2_FWA_Filt/Temp//1HOUR/C:000000|alt:ap:Scripting-OutputLink_W2-Trinity-/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="TrinityW2_FWA_Filt" Class="hec2.model.DataLocation" DssPath="//TrinityW2_FWA_Filt/Temp//1HOUR/C:000000|altName:apName:Scripting-OutputLink_W2-Trinity-/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="OutputLink_W2-Trinity-W2-Lewiston_SacTrn" Program="Scripting" />
     </DataLocation>
   </OutputDataLocations>

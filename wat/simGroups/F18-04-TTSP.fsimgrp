@@ -124,41 +124,6 @@
     </OperationsData>
   </Operations>
   <Meteorology>
-    <MeteorologyData Name="H-2000">
-      <Description />
-      <MetDataType>Historic</MetDataType>
-      <Year>2000</Year>
-    </MeteorologyData>
-    <MeteorologyData Name="H-2004">
-      <Description />
-      <MetDataType>Historic</MetDataType>
-      <Year>2004</Year>
-    </MeteorologyData>
-    <MeteorologyData Name="H-2006">
-      <Description />
-      <MetDataType>Historic</MetDataType>
-      <Year>2006</Year>
-    </MeteorologyData>
-    <MeteorologyData Name="H-2008">
-      <Description />
-      <MetDataType>Historic</MetDataType>
-      <Year>2008</Year>
-    </MeteorologyData>
-    <MeteorologyData Name="H-2013">
-      <Description />
-      <MetDataType>Historic</MetDataType>
-      <Year>2013</Year>
-    </MeteorologyData>
-    <MeteorologyData Name="H-2014">
-      <Description />
-      <MetDataType>Historic</MetDataType>
-      <Year>2014</Year>
-    </MeteorologyData>
-    <MeteorologyData Name="H-2015">
-      <Description />
-      <MetDataType>Historic</MetDataType>
-      <Year>2015</Year>
-    </MeteorologyData>
     <MeteorologyData Name="H-2017">
       <Description />
       <MetDataType>Historic</MetDataType>
@@ -176,125 +141,6 @@
     </MeteorologyData>
   </Meteorology>
   <BoundaryConditions>
-    <BcData Name="APR50_WY2018v-H-2000">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR50_WY2018v-H-2000</f-part>
-      <Operations>APR50_WY2018v</Operations>
-      <Meteorology>H-2000</Meteorology>
-    </BcData>
-    <BcData Name="APR50_WY2018v-H-2004">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR50_WY2018v-H-2004</f-part>
-      <Operations>APR50_WY2018v</Operations>
-      <Meteorology>H-2004</Meteorology>
-    </BcData>
-    <BcData Name="APR50_WY2018v-H-2006">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR50_WY2018v-H-2006</f-part>
-      <Operations>APR50_WY2018v</Operations>
-      <Meteorology>H-2006</Meteorology>
-    </BcData>
-    <BcData Name="APR50_WY2018v-H-2008">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR50_WY2018v-H-2008</f-part>
-      <Operations>APR50_WY2018v</Operations>
-      <Meteorology>H-2008</Meteorology>
-    </BcData>
-    <BcData Name="APR50_WY2018v-H-2013">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR50_WY2018v-H-2013</f-part>
-      <Operations>APR50_WY2018v</Operations>
-      <Meteorology>H-2013</Meteorology>
-    </BcData>
-    <BcData Name="APR50_WY2018v-H-2014">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR50_WY2018v-H-2014</f-part>
-      <Operations>APR50_WY2018v</Operations>
-      <Meteorology>H-2014</Meteorology>
-    </BcData>
-    <BcData Name="APR50_WY2018v-H-2015">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR50_WY2018v-H-2015</f-part>
-      <Operations>APR50_WY2018v</Operations>
-      <Meteorology>H-2015</Meteorology>
-    </BcData>
-    <BcData Name="APR50_WY2018v-H-2017">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR50_WY2018v-H-2017</f-part>
-      <Operations>APR50_WY2018v</Operations>
-      <Meteorology>H-2017</Meteorology>
-    </BcData>
-    <BcData Name="APR50_WY2018v-H-2018">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR50_WY2018v-H-2018</f-part>
-      <Operations>APR50_WY2018v</Operations>
-      <Meteorology>H-2018</Meteorology>
-    </BcData>
-    <BcData Name="APR50_WY2018v-H-2019">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR50_WY2018v-H-2019</f-part>
-      <Operations>APR50_WY2018v</Operations>
-      <Meteorology>H-2019</Meteorology>
-    </BcData>
-    <BcData Name="APR90_WY2018v-H-2000">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR90_WY2018v-H-2000</f-part>
-      <Operations>APR90_WY2018v</Operations>
-      <Meteorology>H-2000</Meteorology>
-    </BcData>
-    <BcData Name="APR90_WY2018v-H-2004">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR90_WY2018v-H-2004</f-part>
-      <Operations>APR90_WY2018v</Operations>
-      <Meteorology>H-2004</Meteorology>
-    </BcData>
-    <BcData Name="APR90_WY2018v-H-2006">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR90_WY2018v-H-2006</f-part>
-      <Operations>APR90_WY2018v</Operations>
-      <Meteorology>H-2006</Meteorology>
-    </BcData>
-    <BcData Name="APR90_WY2018v-H-2008">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR90_WY2018v-H-2008</f-part>
-      <Operations>APR90_WY2018v</Operations>
-      <Meteorology>H-2008</Meteorology>
-    </BcData>
-    <BcData Name="APR90_WY2018v-H-2013">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR90_WY2018v-H-2013</f-part>
-      <Operations>APR90_WY2018v</Operations>
-      <Meteorology>H-2013</Meteorology>
-    </BcData>
-    <BcData Name="APR90_WY2018v-H-2014">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR90_WY2018v-H-2014</f-part>
-      <Operations>APR90_WY2018v</Operations>
-      <Meteorology>H-2014</Meteorology>
-    </BcData>
-    <BcData Name="APR90_WY2018v-H-2015">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR90_WY2018v-H-2015</f-part>
-      <Operations>APR90_WY2018v</Operations>
-      <Meteorology>H-2015</Meteorology>
-    </BcData>
     <BcData Name="APR90_WY2018v-H-2017">
       <Description />
       <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
@@ -302,128 +148,19 @@
       <Operations>APR90_WY2018v</Operations>
       <Meteorology>H-2017</Meteorology>
     </BcData>
-    <BcData Name="APR90_WY2018v-H-2018">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR90_WY2018v-H-2018</f-part>
-      <Operations>APR90_WY2018v</Operations>
-      <Meteorology>H-2018</Meteorology>
-    </BcData>
-    <BcData Name="APR90_WY2018v-H-2019">
-      <Description />
-      <Output-DSS-File>forecast\simGroups\F18-04-TTSP\bc.dss</Output-DSS-File>
-      <f-part>APR90_WY2018v-H-2019</f-part>
-      <Operations>APR90_WY2018v</Operations>
-      <Meteorology>H-2019</Meteorology>
-    </BcData>
   </BoundaryConditions>
   <EnsembleSets>
+    <Simulation>ResSim-F18-04-TTSP</Simulation>
     <Simulation>
-      ResSim-F18-04-TTSP
-      <EnsembleSet Name="APR90_WY2018v-H-2004-SHASTA - TIER 1">
-        <Description />
-        <BcData>APR90_WY2018v-H-2004</BcData>
-        <TemperatureTargetSet>SHASTA - TIER 1</TemperatureTargetSet>
-        <ComputedMembers>
-          <intArray Length="3" Step="10">
-            <I Range="0-3" Data="1,5,11" />
-          </intArray>
-        </ComputedMembers>
-        <MembersToCompute>1,5,11</MembersToCompute>
-      </EnsembleSet>
-      <EnsembleSet Name="APR90_WY2018v-H-2004-SHASTA - TIER 4">
-        <Description />
-        <BcData>APR90_WY2018v-H-2004</BcData>
-        <TemperatureTargetSet>SHASTA - TIER 4</TemperatureTargetSet>
-        <ComputedMembers>
-          <intArray Length="1" Step="10">
-            <I Range="0-1" Data="1" />
-          </intArray>
-        </ComputedMembers>
-        <MembersToCompute>1</MembersToCompute>
-      </EnsembleSet>
-      <EnsembleSet Name="APR90_WY2018v-H-2004-SHASTA - TIER 8">
-        <Description />
-        <BcData>APR90_WY2018v-H-2004</BcData>
-        <TemperatureTargetSet>SHASTA - TIER 8</TemperatureTargetSet>
-        <ComputedMembers>
-          <intArray Length="3" Step="10">
-            <I Range="0-3" Data="1,5,11" />
-          </intArray>
-        </ComputedMembers>
-        <MembersToCompute>1,5,11</MembersToCompute>
-      </EnsembleSet>
+      W2 5-Res-F18-04-TTSP
       <EnsembleSet Name="APR90_WY2018v-H-2017-SHASTA - TIER 1">
         <Description />
         <BcData>APR90_WY2018v-H-2017</BcData>
         <TemperatureTargetSet>SHASTA - TIER 1</TemperatureTargetSet>
         <ComputedMembers>
-          <intArray Length="3" Step="10">
-            <I Range="0-3" Data="1,5,11" />
+          <intArray Length="1" Step="10">
+            <I Range="0-1" Data="1" />
           </intArray>
-        </ComputedMembers>
-        <MembersToCompute>1,5,11</MembersToCompute>
-      </EnsembleSet>
-      <EnsembleSet Name="APR90_WY2018v-H-2017-SHASTA - TIER 4">
-        <Description />
-        <BcData>APR90_WY2018v-H-2017</BcData>
-        <TemperatureTargetSet>SHASTA - TIER 4</TemperatureTargetSet>
-        <ComputedMembers>
-          <intArray Length="0" Step="10" />
-        </ComputedMembers>
-        <MembersToCompute />
-      </EnsembleSet>
-      <EnsembleSet Name="APR90_WY2018v-H-2017-SHASTA - TIER 8">
-        <Description />
-        <BcData>APR90_WY2018v-H-2017</BcData>
-        <TemperatureTargetSet>SHASTA - TIER 8</TemperatureTargetSet>
-        <ComputedMembers>
-          <intArray Length="3" Step="10">
-            <I Range="0-3" Data="1,5,11" />
-          </intArray>
-        </ComputedMembers>
-        <MembersToCompute>1,5,11</MembersToCompute>
-      </EnsembleSet>
-      <EnsembleSet Name="APR90_WY2018v-H-2018-SHASTA - TIER 1">
-        <Description />
-        <BcData>APR90_WY2018v-H-2018</BcData>
-        <TemperatureTargetSet>SHASTA - TIER 1</TemperatureTargetSet>
-        <ComputedMembers>
-          <intArray Length="3" Step="10">
-            <I Range="0-3" Data="1,5,11" />
-          </intArray>
-        </ComputedMembers>
-        <MembersToCompute>1,5,11</MembersToCompute>
-      </EnsembleSet>
-      <EnsembleSet Name="APR90_WY2018v-H-2018-SHASTA - TIER 4">
-        <Description />
-        <BcData>APR90_WY2018v-H-2018</BcData>
-        <TemperatureTargetSet>SHASTA - TIER 4</TemperatureTargetSet>
-        <ComputedMembers>
-          <intArray Length="0" Step="10" />
-        </ComputedMembers>
-        <MembersToCompute />
-      </EnsembleSet>
-      <EnsembleSet Name="APR90_WY2018v-H-2018-SHASTA - TIER 8">
-        <Description />
-        <BcData>APR90_WY2018v-H-2018</BcData>
-        <TemperatureTargetSet>SHASTA - TIER 8</TemperatureTargetSet>
-        <ComputedMembers>
-          <intArray Length="3" Step="10">
-            <I Range="0-3" Data="1,5,11" />
-          </intArray>
-        </ComputedMembers>
-        <MembersToCompute>1,5,11</MembersToCompute>
-      </EnsembleSet>
-    </Simulation>
-    <Simulation>
-      W2 5-Res-F18-04-TTSP
-      <EnsembleSet Name="APR50_WY2018v-H-2006-SHASTA - TIER 1">
-        <Description />
-        <BcData>APR50_WY2018v-H-2006</BcData>
-        <TemperatureTargetSet>SHASTA - TIER 1</TemperatureTargetSet>
-        <ComputedMembers>
-          <intArray Length="0" Step="10" />
         </ComputedMembers>
         <MembersToCompute>1</MembersToCompute>
       </EnsembleSet>
@@ -472,6 +209,14 @@
       <EnsembleSet Name="APR50_WY2018v-H-2006-SHASTA - TIER 1">
         <CollectionStart>0</CollectionStart>
         <CollectionEnd>499</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="APR90_WY2018v-H-2017-SHASTA - TIER 1">
+        <CollectionStart>1000</CollectionStart>
+        <CollectionEnd>1499</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="APR90_WY2018v-H-2006-SHASTA - TIER 1">
+        <CollectionStart>500</CollectionStart>
+        <CollectionEnd>999</CollectionEnd>
       </EnsembleSet>
     </Simulation>
   </EnsembleSetIndexing>

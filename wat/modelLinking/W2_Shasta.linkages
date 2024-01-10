@@ -333,8 +333,13 @@
             </DataLocation>
           </DownStreamLocation>
         </DataLocation>
-        <DataLocation Name="WB 1 Bathymetry" Class="hec2.model.DataLocation" DssPath="/W2:Shasta_Lake_bathy.npt/WB 1 Bathymetry/Elev-ELWS//1HOUR/alt:ap:CeQualW2-WB 1 Bathymetry/" ComputeType="Computed" Model="" Parameter="Elev-ELWS" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="WB 1 Bathymetry" Class="hec2.model.DataLocation" DssPath="/W2:Shasta_Lake_bathy.npt/WB 1 Bathymetry/Elev-ELWS//1HOUR/alt:ap:CeQualW2-WB 1 Bathymetry/" ComputeType="Computed" Model="DSS File" Parameter="Elev-ELWS" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="W2 Shasta" Program="CeQualW2" />
+          <DownStreamLocation>
+            <DataLocation Name="Shasta Lake" Class="hec2.model.DssDataLocation" DssPath="//Shasta Lake/ELEV-FORECAST//1Day/AMER_BC_SCRIPT/" ComputeType="Computed" Parameter="ELEV-FORECAST" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
         </DataLocation>
         <DataLocation Name="Auto Port Selection" Class="hec2.model.DataLocation" DssPath="/W2:dynsplit_selective%X%.npt/Auto Port Selection/Temp-Target//1HOUR/alt:ap:CeQualW2-Auto Port Selection/" ComputeType="Computed" Model="DSS File" Parameter="Temp-Target" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="W2 Shasta" Program="CeQualW2" />
@@ -344,8 +349,13 @@
             </DataLocation>
           </DownStreamLocation>
         </DataLocation>
-        <DataLocation Name="WB 1 Vertical Profile" Class="hec2.model.DataLocation" DssPath="/W2:Vpr.npt/WB 1 Vertical Profile/Temp//1HOUR/alt:ap:CeQualW2-WB 1 Vertical Profile/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="WB 1 Vertical Profile" Class="hec2.model.DataLocation" DssPath="/W2:Vpr.npt/WB 1 Vertical Profile/Temp//1HOUR/alt:ap:CeQualW2-WB 1 Vertical Profile/" ComputeType="Computed" Model="DSS File" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="W2 Shasta" Program="CeQualW2" />
+          <DownStreamLocation>
+            <DataLocation Name="IC" Class="hec2.model.DssDataLocation" DssPath="/Shasta Lake/IC/depth-temp///icPathsMap/" ComputeType="Computed" Parameter="depth-temp" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
         </DataLocation>
       </DataLocations>
     </ModelAlternative>

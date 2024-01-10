@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<WatSimulation SimulationName="W2 Shasta-F18-04-TTSP" Description="" FPart="W2 Shasta:2018-03-FC" HasComputed="false" ComputeError="false" Parent="W2 Shasta-F18-04-TTSP" IsFrmSimulation="false">
+<WatSimulation SimulationName="W2 Shasta-F18-04-TTSP" Description="" FPart="W2 Shasta:2018-03-FC" HasComputed="true" ComputeError="false" Parent="W2 Shasta-F18-04-TTSP" LastComputedBy="benjamin" LastComputedDate="1704917675932" IsFrmSimulation="false">
   <ModelAlternatives ModelAlternativeCount="2">
-    <ModelAlternative0 Program="Scripting" Name="Pre-Process_ResSim_SacTrn" File="scripting/Pre-Process_ResSim_SacTrn.scAlt">
+    <ModelAlternative0 Program="Scripting" Name="Pre-Process_W2_5-Res_SacTrn" File="scripting/Pre-Process_W2_5-Res_SacTrn.scAlt">
       <Description>
-        <desc cnt="0" value="Pre-process any data into required ResSim-specific records for forecast simulations" />
+        <desc cnt="0" value="Process forecast data for use by W2-5Res coupled to a ResSim river model" />
       </Description>
-      <LastComputeTime Date="31 December 1899, 24:00" />
+      <LastComputeTime Date="10 January 2024, 20:14:27" />
     </ModelAlternative0>
     <ModelAlternative1 Program="CeQualW2" Name="W2 Shasta" File="CeQual-W2/W2/W2 Shasta/W2_Shasta.w2Alt">
       <Description />
-      <LastComputeTime Date="31 December 1899, 24:00" />
+      <LastComputeTime Date="10 January 2024, 20:14:35" />
     </ModelAlternative1>
   </ModelAlternatives>
   <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<WatSimulation SimulationName="W2 5-Res-F18-04-TTSP" Description="" FPart="W2 5-Res:2018-03-FC" HasComputed="false" ComputeError="true" Parent="W2 5-Res-F18-04-TTSP" LastComputedBy="benjamin" LastComputedDate="1704782046803" IsFrmSimulation="false">
+<WatSimulation SimulationName="W2 5-Res-F18-04-TTSP" Description="" FPart="W2 5-Res:2018-03-FC" HasComputed="true" ComputeError="false" Parent="W2 5-Res-F18-04-TTSP" LastComputedBy="benjamin" LastComputedDate="1704918044204" IsFrmSimulation="false">
   <ModelAlternatives ModelAlternativeCount="11">
     <ModelAlternative0 Program="Scripting" Name="Pre-Process_W2_5-Res_SacTrn" File="scripting/Pre-Process_W2_5-Res_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Process forecast data for use by W2-5Res coupled to a ResSim river model" />
       </Description>
-      <LastComputeTime Date="9 January 2024, 06:39:49" />
+      <LastComputeTime Date="10 January 2024, 20:18:37" />
     </ModelAlternative0>
     <ModelAlternative1 Program="CeQualW2" Name="W2 Trinity Prescribed" File="CeQual-W2/W2 Trinity Prescribed/W2 Trinity Prescribed/W2_Trinity_Prescribed.w2Alt">
       <Description />
@@ -39,21 +39,21 @@
     </ModelAlternative6>
     <ModelAlternative7 Program="CeQualW2" Name="W2 Shasta" File="CeQual-W2/W2/W2 Shasta/W2_Shasta.w2Alt">
       <Description />
-      <LastComputeTime Date="31 December 1899, 24:00:00" />
+      <LastComputeTime Date="9 January 2024, 07:14" />
     </ModelAlternative7>
     <ModelAlternative8 Program="CeQualW2" Name="W2 Keswick Prescribed" File="CeQual-W2/W2 Keswick Prescribed/W2 Keswick Prescribed/W2_Keswick_Prescribed.w2Alt">
       <Description />
-      <LastComputeTime Date="9 January 2024, 06:34" />
+      <LastComputeTime Date="9 January 2024, 07:32" />
     </ModelAlternative8>
     <ModelAlternative9 Program="Scripting" Name="Pre-Process_ResSim_SacTrn" File="scripting/Pre-Process_ResSim_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Pre-process any data into required ResSim-specific records for forecast simulations" />
       </Description>
-      <LastComputeTime Date="9 January 2024, 06:34" />
+      <LastComputeTime Date="10 January 2024, 20:18:42" />
     </ModelAlternative9>
     <ModelAlternative10 Program="ResSim" Name="RSSacTrnRv" File="rss/RSSacTrnRv.ralt">
       <Description />
-      <LastComputeTime Date="22 December 2023, 19:53" />
+      <LastComputeTime Date="10 January 2024, 20:20:44" />
     </ModelAlternative10>
   </ModelAlternatives>
   <SkipModelAltCompute>
@@ -62,6 +62,8 @@
     <SkipModelAlt>CeQualW2-W2 Trinity Prescribed</SkipModelAlt>
     <SkipModelAlt>CeQualW2-W2 Whiskeytown</SkipModelAlt>
     <SkipModelAlt>CeQualW2-W2 Lewiston Prescribed</SkipModelAlt>
+    <SkipModelAlt>CeQualW2-W2 Shasta</SkipModelAlt>
+    <SkipModelAlt>CeQualW2-W2 Keswick Prescribed</SkipModelAlt>
     <SkipModelAlt>Scripting-OutputLink_W2-Lewiston-Downstream_SacTrn</SkipModelAlt>
   </SkipModelAltCompute>
   <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />

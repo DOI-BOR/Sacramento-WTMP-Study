@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModelLinking>
   <Name>
-    ResSim-F18-04-test
-    <ModelAlternative Program="Scripting" Name="Pre-Process_ResSim_SacTrn" File="scripting/Pre-Process_ResSim_SacTrn.scAlt">
-      <Description>
-        <desc cnt="0" value="Pre-process any data into required ResSim-specific records for forecast simulations" />
-      </Description>
-      <DataLocations />
-    </ModelAlternative>
-    <ModelAlternative Program="Scripting" Name="Post-Process_ResSim_SacTrn" File="scripting/Post-Process_ResSim_SacTrn.scAlt">
-      <Description>
-        <desc cnt="0" value="Adds tunnel heating to output values to provide a record of end-tunnel temperatures" />
-      </Description>
-      <DataLocations>
-        <DataLocation Name="WQ_BOUND_TEMP_SRC_CCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_CCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
-        </DataLocation>
-        <DataLocation Name="LEWISTON RESERVOIR-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//LEWISTON RESERVOIR-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
-        </DataLocation>
-        <DataLocation Name="WQ_BOUND_TEMP_SRC_SCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_SCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
-        </DataLocation>
-        <DataLocation Name="WHISKEYTOWN LAKE-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WHISKEYTOWN LAKE-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
-        </DataLocation>
-      </DataLocations>
-    </ModelAlternative>
+    ResSim
     <ModelAlternative Program="ResSim" Name="RSSacTrn" File="rss/RSSacTrn.ralt">
       <Description />
       <DataLocations>

@@ -30,6 +30,32 @@
         <dss-pathname>//SHASTA/TEMP-WATER-TARGET//1Week/C:000011|TIER 1/</dss-pathname>
       </dss-pathnames>
     </TemperatureTargetSet>
+    <TemperatureTargetSet Name="Test_constant" user-defined="true">
+      <Description />
+      <file-path>forecast\simGroups\F13-03-ensemble\Test_constant.dss</file-path>
+      <Output-DSS-File>forecast\simGroups\F13-03-ensemble\Test_constant.dss</Output-DSS-File>
+      <River-Location Name="Above Clear Creek" Index="2">
+        <Description />
+      </River-Location>
+      <dss-pathnames>
+        <dss-pathname>///TEMP-WATER-TARGET//1Week/C:000001|USER-DEFINED/</dss-pathname>
+        <dss-pathname>///TEMP-WATER-TARGET//1Week/C:000002|USER-DEFINED/</dss-pathname>
+        <dss-pathname>///TEMP-WATER-TARGET//1Week/C:000003|USER-DEFINED/</dss-pathname>
+      </dss-pathnames>
+    </TemperatureTargetSet>
+    <TemperatureTargetSet Name="test_early_season" user-defined="true">
+      <Description />
+      <file-path>forecast\simGroups\F13-03-ensemble\test_early_season.dss</file-path>
+      <Output-DSS-File>forecast\simGroups\F13-03-ensemble\test_early_season.dss</Output-DSS-File>
+      <River-Location Name="Above Clear Creek" Index="2">
+        <Description />
+      </River-Location>
+      <dss-pathnames>
+        <dss-pathname>///TEMP-WATER-TARGET//1Week/C:000001|USER-DEFINED/</dss-pathname>
+        <dss-pathname>///TEMP-WATER-TARGET//1Week/C:000002|USER-DEFINED/</dss-pathname>
+        <dss-pathname>///TEMP-WATER-TARGET//1Week/C:000003|USER-DEFINED/</dss-pathname>
+      </dss-pathnames>
+    </TemperatureTargetSet>
   </TemperatureTargetSets>
   <InitialConditions>
     <Reservoir Name="Keswick Reservoir">
@@ -285,10 +311,70 @@
         </ComputedMembers>
         <MembersToCompute>11</MembersToCompute>
       </EnsembleSet>
+      <EnsembleSet Name="MAR50-H-2010-Test_constant">
+        <Description />
+        <BcData>MAR50-H-2010</BcData>
+        <TemperatureTargetSet>Test_constant</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="0" Step="10" />
+        </ComputedMembers>
+        <MembersToCompute />
+      </EnsembleSet>
+      <EnsembleSet Name="MAR50-H-2014-Test_constant">
+        <Description />
+        <BcData>MAR50-H-2014</BcData>
+        <TemperatureTargetSet>Test_constant</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="3" Step="10">
+            <I Range="0-3" Data="1,2,3" />
+          </intArray>
+        </ComputedMembers>
+        <MembersToCompute>2</MembersToCompute>
+      </EnsembleSet>
+      <EnsembleSet Name="MAR50-H-2017-Test_constant">
+        <Description />
+        <BcData>MAR50-H-2017</BcData>
+        <TemperatureTargetSet>Test_constant</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="0" Step="10" />
+        </ComputedMembers>
+        <MembersToCompute />
+      </EnsembleSet>
+      <EnsembleSet Name="MAR90-H-2014-test_early_season">
+        <Description />
+        <BcData>MAR90-H-2014</BcData>
+        <TemperatureTargetSet>test_early_season</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="3" Step="10">
+            <I Range="0-3" Data="1,2,3" />
+          </intArray>
+        </ComputedMembers>
+        <MembersToCompute>1-3</MembersToCompute>
+      </EnsembleSet>
     </Simulation>
   </EnsembleSets>
   <EnsembleSetIndexing>
     <Simulation Name="ResSim-F13-03-ensemble">
+      <EnsembleSet Name="MAR50-H-2010-Test_constant">
+        <CollectionStart>5000</CollectionStart>
+        <CollectionEnd>5499</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="MAR50-H-2012-SHASTA - TIER 1">
+        <CollectionStart>500</CollectionStart>
+        <CollectionEnd>999</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="MAR50-H-2017-SHASTA - TIER 1">
+        <CollectionStart>1500</CollectionStart>
+        <CollectionEnd>1999</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="MAR90-H-2017-SHASTA - TIER 1">
+        <CollectionStart>4000</CollectionStart>
+        <CollectionEnd>4499</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="MAR90-H-2014-SHASTA - TIER 1">
+        <CollectionStart>3500</CollectionStart>
+        <CollectionEnd>3999</CollectionEnd>
+      </EnsembleSet>
       <EnsembleSet Name="MAR50-H-2018-SHASTA - TIER 1">
         <CollectionStart>2000</CollectionStart>
         <CollectionEnd>2499</CollectionEnd>
@@ -301,6 +387,10 @@
         <CollectionStart>4500</CollectionStart>
         <CollectionEnd>4999</CollectionEnd>
       </EnsembleSet>
+      <EnsembleSet Name="MAR50-H-2014-Test_constant">
+        <CollectionStart>5500</CollectionStart>
+        <CollectionEnd>5999</CollectionEnd>
+      </EnsembleSet>
       <EnsembleSet Name="MAR50-H-2010-SHASTA - TIER 1">
         <CollectionStart>0</CollectionStart>
         <CollectionEnd>499</CollectionEnd>
@@ -309,25 +399,17 @@
         <CollectionStart>3000</CollectionStart>
         <CollectionEnd>3499</CollectionEnd>
       </EnsembleSet>
-      <EnsembleSet Name="MAR50-H-2012-SHASTA - TIER 1">
-        <CollectionStart>500</CollectionStart>
-        <CollectionEnd>999</CollectionEnd>
-      </EnsembleSet>
-      <EnsembleSet Name="MAR50-H-2017-SHASTA - TIER 1">
-        <CollectionStart>1500</CollectionStart>
-        <CollectionEnd>1999</CollectionEnd>
+      <EnsembleSet Name="MAR90-H-2014-test_early_season">
+        <CollectionStart>6500</CollectionStart>
+        <CollectionEnd>6999</CollectionEnd>
       </EnsembleSet>
       <EnsembleSet Name="MAR90-H-2010-SHASTA - TIER 1">
         <CollectionStart>2500</CollectionStart>
         <CollectionEnd>2999</CollectionEnd>
       </EnsembleSet>
-      <EnsembleSet Name="MAR90-H-2017-SHASTA - TIER 1">
-        <CollectionStart>4000</CollectionStart>
-        <CollectionEnd>4499</CollectionEnd>
-      </EnsembleSet>
-      <EnsembleSet Name="MAR90-H-2014-SHASTA - TIER 1">
-        <CollectionStart>3500</CollectionStart>
-        <CollectionEnd>3999</CollectionEnd>
+      <EnsembleSet Name="MAR50-H-2017-Test_constant">
+        <CollectionStart>6000</CollectionStart>
+        <CollectionEnd>6499</CollectionEnd>
       </EnsembleSet>
     </Simulation>
   </EnsembleSetIndexing>

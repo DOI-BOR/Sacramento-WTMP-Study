@@ -6,17 +6,37 @@
   <ScriptFile>scripts/Post-Process_ResSim_SacTrn.py</ScriptFile>
   <TimeStep>1HOUR</TimeStep>
   <DataLocations>
-    <DataLocation Name="WQ_BOUND_TEMP_SRC_CCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_CCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="WQ_BOUND_TEMP_SRC_CCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_CCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-RSSacTrn" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
+      <DownStreamLocation>
+        <DataLocation Name="wq_bound_temp_src_CCtunnel" Class="hec2.model.DataLocation" DssPath="//wq_bound_temp_src_CCtunnel/degC//1HOUR/ResSim:2018:ResSim-RSSacTrn/" ComputeType="Computed" Parameter="State Variable" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="LEWISTON RESERVOIR-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//LEWISTON RESERVOIR-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="LEWISTON RESERVOIR-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//LEWISTON RESERVOIR-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-RSSacTrn" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
+      <DownStreamLocation>
+        <DataLocation Name="Lewiston Reservoir-Tunnel" Class="hec2.model.DataLocation" DssPath="//Lewiston Reservoir-Tunnel/Temp-Water Temperature//1HOUR/ResSim:2018:ResSim-RSSacTrn/" ComputeType="Computed" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="WQ_BOUND_TEMP_SRC_SCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_SCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="WQ_BOUND_TEMP_SRC_SCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_SCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-RSSacTrn" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
+      <DownStreamLocation>
+        <DataLocation Name="wq_bound_temp_src_SCtunnel" Class="hec2.model.DataLocation" DssPath="//wq_bound_temp_src_SCtunnel/degC//1HOUR/ResSim:2018:ResSim-RSSacTrn/" ComputeType="Computed" Parameter="State Variable" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="WHISKEYTOWN LAKE-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WHISKEYTOWN LAKE-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="WHISKEYTOWN LAKE-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WHISKEYTOWN LAKE-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-RSSacTrn" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrn" Program="Scripting" />
+      <DownStreamLocation>
+        <DataLocation Name="Whiskeytown Lake-Tunnel" Class="hec2.model.DataLocation" DssPath="//Whiskeytown Lake-Tunnel/Temp-Water Temperature//1HOUR/ResSim:2018:ResSim-RSSacTrn/" ComputeType="Computed" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="RSSacTrn" Program="ResSim" />
+        </DataLocation>
+      </DownStreamLocation>
     </DataLocation>
   </DataLocations>
   <OutputDataLocations>

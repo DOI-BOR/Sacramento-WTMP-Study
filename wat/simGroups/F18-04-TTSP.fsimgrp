@@ -145,7 +145,7 @@
             <I Range="0-1" Data="5" />
           </intArray>
         </ComputedMembers>
-        <MembersToCompute>5</MembersToCompute>
+        <MembersToCompute />
       </EnsembleSet>
       <EnsembleSet Name="APR50_WY2018v-H-2014-SHASTA - TIER 5">
         <Description />
@@ -161,9 +161,11 @@
         <BcData>APR90_WY2018v-H-2018</BcData>
         <TemperatureTargetSet>SHASTA - TIER 5</TemperatureTargetSet>
         <ComputedMembers>
-          <intArray Length="0" Step="10" />
+          <intArray Length="1" Step="10">
+            <I Range="0-1" Data="1" />
+          </intArray>
         </ComputedMembers>
-        <MembersToCompute />
+        <MembersToCompute>1,5,11</MembersToCompute>
       </EnsembleSet>
       <EnsembleSet Name="APR90_WY2018v-H-2014-SHASTA - TIER 5">
         <Description />

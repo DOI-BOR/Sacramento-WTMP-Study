@@ -139,14 +139,10 @@ position_analysis_config_filename, met_output_DSS_filename, met_F_part):
 		ts_read.setDSSFileName(source_DSS_file_name)
 		if DEBUG: print "Reading %s from DSS file %s."%(token[3].strip(), source_DSS_file_name)
 		source_path_parts = token[3].strip().strip('/').split('/', 5)
-		dest_path_parts = token[6].strip().strip('/').split('/', 5)
-		source_path = dest_path = '/'
+		source_path = '/'
 		for index in (0,1,2,4,5):
 			source_path += (source_path_parts[index] + '/')
-			dest_path += (dest_path_parts[index] + '/')
-			if index == 2:
-				source_path += '/'
-				dest_path += '/'
+			if index == 2: source_path += '/'
 		tsc_source = tscont()
 		tsc_source.fullName = source_path
 		status = ts_read.read(tsc_source, False)
@@ -159,11 +155,9 @@ position_analysis_config_filename, met_output_DSS_filename, met_F_part):
 		if DEBUG:  print "\tTime series contains %d values."%(tsmath_source.getContainer().numberValues)
 		if DEBUG:  print "\tShifting time series with shiftInTime(%s)."%("%dMo"%(diff_years*12))
 		# tsmath_shift = tsmath_source.shiftInTime("%dYrar"%(diff_years))
-		padded_end_time = HecTime()
-		padded_end_time.set(end_time.value() + 1440)
 		tsmath_shift = tsmath.generateRegularIntervalTimeSeries(
 			"%s 0000"%(start_time.date(4)),
-			"%s 2400"%(padded_end_time.date(4)),
+			"%s 2400"%(end_time.date(4)),
 			time_step_label, "0M", 1.0)
 		time_seek = HecTime(tsmath_shift.firstValidDate(), HecTime.MINUTE_INCREMENT)
 		time_seek.setYearMonthDay(time_seek.year() - diff_years, time_seek.month(), time_seek.day(), time_seek.minutesSinceMidnight())
@@ -188,11 +182,10 @@ position_analysis_config_filename, met_output_DSS_filename, met_F_part):
 			return ['']
 		tsmath_shift.setType(tsmath_source.getType())
 		tsmath_shift.setUnits(tsmath_source.getUnits())
-		tsmath_shift.setPathname(dest_path)
+		tsmath_shift.setPathname(tsmath_source.getContainer().fullName)
 		tsmath_shift.setVersion(met_F_part)
 		ts_write = hec.heclib.dss.HecTimeSeries()
 		ts_write.setDSSFileName(met_output_DSS_filename)
-		if DEBUG: print "Writing %s to DSS file %s."%(shift_container.fullName, met_output_DSS_filename)
 		ts_write.write(tsmath_shift.getData())
 		ts_write.done()
 		ts_read.done()

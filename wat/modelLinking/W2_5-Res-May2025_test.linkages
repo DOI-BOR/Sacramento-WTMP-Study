@@ -2139,6 +2139,14 @@
             </DataLocation>
           </DownStreamLocation>
         </DataLocation>
+        <DataLocation Name="target_temp_upstream" Class="hec2.model.DataLocation" DssPath="//target_temp_upstream/Temp-water//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="DSS File" Parameter="Temp-water" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="Post-Process_ResSim_SacTrnRv" Program="Scripting" />
+          <DownStreamLocation>
+            <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET-W2-UPSTREAM//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER-TARGET-W2-UPSTREAM" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
       </DataLocations>
     </ModelAlternative>
   </Name>

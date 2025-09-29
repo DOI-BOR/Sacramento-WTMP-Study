@@ -11,6 +11,14 @@
       <Name>W2 5-Res-18Mar2025</Name>
       <Class>hec2.wat.model.WatSimulation</Class>
     </Simulation>
+    <Simulation>
+      <Name>W2 Shasta 5-18Mar2025</Name>
+      <Class>hec2.wat.model.WatSimulation</Class>
+    </Simulation>
+    <Simulation>
+      <Name>W2 Shasta-18Mar2025</Name>
+      <Class>hec2.wat.model.WatSimulation</Class>
+    </Simulation>
   </Simulations>
   <TemperatureTargetSets>
     <TemperatureTargetSet Name="SHASTA - TIER 2" user-defined="false">
@@ -109,6 +117,30 @@
         <dss-pathname>/WTMP_Sac_Trinity/Shasta Dam Target degC/TEMP-WATER//1Day/C:000001|May_BSF/</dss-pathname>
       </dss-pathnames>
     </TemperatureTargetSet>
+    <TemperatureTargetSet Name="TEST" user-defined="false">
+      <Description />
+      <file-path>forecast\CVP-ops\CCR_TEST.dss</file-path>
+      <Output-DSS-File>forecast\simGroups\18Mar2025\TEST.dss</Output-DSS-File>
+      <River-Location Name="Above Clear Creek" Index="2">
+        <Description />
+      </River-Location>
+      <dss-pathnames>
+        <dss-pathname>///TEMP-WATER-TARGET//1Hour/C:000001|TEST/</dss-pathname>
+        <dss-pathname>///TEMP-WATER-TARGET//1Hour/C:000002|TEST/</dss-pathname>
+      </dss-pathnames>
+    </TemperatureTargetSet>
+    <TemperatureTargetSet Name="TEST2" user-defined="false">
+      <Description />
+      <file-path>forecast\CVP-ops\CCR_TEST2.dss</file-path>
+      <Output-DSS-File>forecast\simGroups\18Mar2025\TEST2.dss</Output-DSS-File>
+      <River-Location Name="At Shasta Dam" Index="0">
+        <Description />
+      </River-Location>
+      <dss-pathnames>
+        <dss-pathname>///TEMP-WATER-TARGET//1Hour/C:000001|TEST2/</dss-pathname>
+        <dss-pathname>///TEMP-WATER-TARGET//1Hour/C:000002|TEST2/</dss-pathname>
+      </dss-pathnames>
+    </TemperatureTargetSet>
   </TemperatureTargetSets>
   <InitialConditions>
     <Reservoir Name="Keswick Reservoir">
@@ -119,8 +151,8 @@
     </Reservoir>
     <Reservoir Name="Whiskeytown Lake">
       <Profile Name="2025-03-11">
-        <Output-DSS-File>shared/whiskeytown_1Prof.dss</Output-DSS-File>
-        <DSS-Pathname>//Whiskeytown Lake/DEPTH-TEMP//2025-03-11//</DSS-Pathname>
+        <Output-DSS-File>shared/whiskeytown_merged_00-25_Site_2.dss</Output-DSS-File>
+        <DSS-Pathname>//Whiskeytown Lake/DEPTH-TEMP//2025-03-11T10:31:52//</DSS-Pathname>
       </Profile>
     </Reservoir>
     <Reservoir Name="Shasta Lake">
@@ -168,14 +200,102 @@
       <Year>2020</Year>
     </MeteorologyData>
   </Meteorology>
-  <BoundaryConditions />
+  <BoundaryConditions>
+    <BcData Name="Mar2025-H-2019">
+      <Description />
+      <Output-DSS-File>forecast\simGroups\18Mar2025\bc.dss</Output-DSS-File>
+      <f-part>Mar2025-H-2019</f-part>
+      <Operations>Mar2025</Operations>
+      <Meteorology>H-2019</Meteorology>
+    </BcData>
+  </BoundaryConditions>
   <EnsembleSets>
     <Simulation>W2 5-Res-18Mar2025</Simulation>
-    <Simulation>ResSim-18Mar2025</Simulation>
+    <Simulation>
+      W2 Shasta-18Mar2025
+      <EnsembleSet Name="Mar2025-H-2019-TEST">
+        <Description />
+        <BcData>Mar2025-H-2019</BcData>
+        <TemperatureTargetSet>TEST</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="1" Step="10">
+            <I Range="0-1" Data="2" />
+          </intArray>
+        </ComputedMembers>
+        <MembersToCompute>2</MembersToCompute>
+      </EnsembleSet>
+    </Simulation>
+    <Simulation>
+      ResSim-18Mar2025
+      <EnsembleSet Name="Mar2025-H-2019-Shasta Dam Target degC - May">
+        <Description />
+        <BcData>Mar2025-H-2019</BcData>
+        <TemperatureTargetSet>Shasta Dam Target degC - May</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="1" Step="10">
+            <I Range="0-1" Data="1" />
+          </intArray>
+        </ComputedMembers>
+        <MembersToCompute>1</MembersToCompute>
+      </EnsembleSet>
+      <EnsembleSet Name="Mar2025-H-2019-TEST">
+        <Description />
+        <BcData>Mar2025-H-2019</BcData>
+        <TemperatureTargetSet>TEST</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="2" Step="10">
+            <I Range="0-2" Data="1,2" />
+          </intArray>
+        </ComputedMembers>
+        <MembersToCompute>2</MembersToCompute>
+      </EnsembleSet>
+      <EnsembleSet Name="Mar2025-H-2019-TEST2">
+        <Description />
+        <BcData>Mar2025-H-2019</BcData>
+        <TemperatureTargetSet>TEST2</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="2" Step="10">
+            <I Range="0-2" Data="2,1" />
+          </intArray>
+        </ComputedMembers>
+        <MembersToCompute>1,2</MembersToCompute>
+      </EnsembleSet>
+    </Simulation>
+    <Simulation>
+      W2 Shasta 5-18Mar2025
+      <EnsembleSet Name="Mar2025-H-2019-Shasta Dam Target degC - May">
+        <Description />
+        <BcData>Mar2025-H-2019</BcData>
+        <TemperatureTargetSet>Shasta Dam Target degC - May</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="1" Step="10">
+            <I Range="0-1" Data="1" />
+          </intArray>
+        </ComputedMembers>
+        <MembersToCompute>1</MembersToCompute>
+      </EnsembleSet>
+      <EnsembleSet Name="Mar2025-H-2019-TEST">
+        <Description />
+        <BcData>Mar2025-H-2019</BcData>
+        <TemperatureTargetSet>TEST</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="2" Step="10">
+            <I Range="0-2" Data="1,2" />
+          </intArray>
+        </ComputedMembers>
+        <MembersToCompute>2</MembersToCompute>
+      </EnsembleSet>
+    </Simulation>
   </EnsembleSets>
   <EnsembleSetIndexing>
     <Simulation Name="W2 5-Res-18Mar2025">
       <EnsembleSet Name="Mar2025-H-2020-Shasta Dam Target degC - May">
+        <CollectionStart>0</CollectionStart>
+        <CollectionEnd>499</CollectionEnd>
+      </EnsembleSet>
+    </Simulation>
+    <Simulation Name="W2 Shasta-18Mar2025">
+      <EnsembleSet Name="Mar2025-H-2019-TEST">
         <CollectionStart>0</CollectionStart>
         <CollectionEnd>499</CollectionEnd>
       </EnsembleSet>
@@ -185,10 +305,6 @@
         <CollectionStart>1500</CollectionStart>
         <CollectionEnd>1999</CollectionEnd>
       </EnsembleSet>
-      <EnsembleSet Name="Mar2025-H-2017-SHASTA - TIER 2">
-        <CollectionStart>0</CollectionStart>
-        <CollectionEnd>499</CollectionEnd>
-      </EnsembleSet>
       <EnsembleSet Name="Mar2025-H-2019-SHASTA - TIER 5">
         <CollectionStart>2500</CollectionStart>
         <CollectionEnd>2999</CollectionEnd>
@@ -197,9 +313,13 @@
         <CollectionStart>3000</CollectionStart>
         <CollectionEnd>3499</CollectionEnd>
       </EnsembleSet>
-      <EnsembleSet Name="Mar2025-H-2020-Shasta Dam Target degC - May">
-        <CollectionStart>4000</CollectionStart>
-        <CollectionEnd>4499</CollectionEnd>
+      <EnsembleSet Name="Mar2025-H-2019-TEST">
+        <CollectionStart>5500</CollectionStart>
+        <CollectionEnd>5999</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="Mar2025-H-2019-TEST2">
+        <CollectionStart>6000</CollectionStart>
+        <CollectionEnd>6499</CollectionEnd>
       </EnsembleSet>
       <EnsembleSet Name="Mar2025-H-2017-SHASTA - TIER 8">
         <CollectionStart>1000</CollectionStart>
@@ -209,6 +329,22 @@
         <CollectionStart>500</CollectionStart>
         <CollectionEnd>999</CollectionEnd>
       </EnsembleSet>
+      <EnsembleSet Name="Mar2025-H-2017-SHASTA - TIER 2">
+        <CollectionStart>0</CollectionStart>
+        <CollectionEnd>499</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="Mar2025-H-2019-Shasta Dam Target degC - May">
+        <CollectionStart>4500</CollectionStart>
+        <CollectionEnd>4999</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="Mar2025-H-2020-Shasta Dam Target degC - May">
+        <CollectionStart>4000</CollectionStart>
+        <CollectionEnd>4499</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="Mar2025-H-2019-CCR_TEST">
+        <CollectionStart>5000</CollectionStart>
+        <CollectionEnd>5499</CollectionEnd>
+      </EnsembleSet>
       <EnsembleSet Name="Mar2025-H-2019-SHASTA - TIER 2">
         <CollectionStart>2000</CollectionStart>
         <CollectionEnd>2499</CollectionEnd>
@@ -216,6 +352,20 @@
       <EnsembleSet Name="Mar2025-H-2019-Test1">
         <CollectionStart>3500</CollectionStart>
         <CollectionEnd>3999</CollectionEnd>
+      </EnsembleSet>
+    </Simulation>
+    <Simulation Name="W2 Shasta 5-18Mar2025">
+      <EnsembleSet Name="Mar2025-H-2019-TEST">
+        <CollectionStart>1000</CollectionStart>
+        <CollectionEnd>1499</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="Mar2025-H-2019-Shasta Dam Target degC - May">
+        <CollectionStart>0</CollectionStart>
+        <CollectionEnd>499</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="Mar2025-H-2019-CCR_TEST">
+        <CollectionStart>500</CollectionStart>
+        <CollectionEnd>999</CollectionEnd>
       </EnsembleSet>
     </Simulation>
   </EnsembleSetIndexing>

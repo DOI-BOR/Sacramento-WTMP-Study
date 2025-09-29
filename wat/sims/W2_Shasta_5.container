@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimulationContainer SimulationContainerName="W2 Shasta 5" Description="" AnalysisPeriod="2020" Alternative="W2 Shasta 5" ProgramOrder="W2 Shasta and ResSim" WarmupTimeSteps="0" SimulationCount="1">
+  <Simulation0 SimulationName="W2 Shasta 5" />
+</SimulationContainer>
+

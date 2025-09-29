@@ -9,7 +9,7 @@
     <DataLocation Name="model_output" Class="hec2.model.DataLocation" DssPath="//model_output/Flow//1HOUR/alt:ap:Scripting-Pre-Process_ResSim_Sac/" ComputeType="Computed" Model="CeQualW2-W2 Shasta" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Pre-Process_ResSim_SacTrn" Program="Scripting" />
       <DownStreamLocation>
-        <DataLocation Name="Seg 77 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_77.opt/Seg 77 Withdrawal/Flow-QWD//1HOUR/ResSim:2018:CeQualW2-W2 Shasta/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="Seg 77 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_77.opt/Seg 77 Withdrawal/Flow-QWD//1HOUR/W2 Shasta :2020:CeQualW2-W2 Shasta/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="W2 Shasta" Program="CeQualW2" />
         </DataLocation>
       </DownStreamLocation>

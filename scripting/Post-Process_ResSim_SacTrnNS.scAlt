@@ -9,7 +9,7 @@
     <DataLocation Name="WQ_BOUND_TEMP_SRC_CCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_CCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-RSSacTrnNS" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
       <DownStreamLocation>
-        <DataLocation Name="wq_bound_temp_src_CCtunnel" Class="hec2.model.DataLocation" DssPath="//wq_bound_temp_src_CCtunnel/degC//1HOUR/W2 Shasta:2018-03-FC:ResSim-RSSacTrnNS/" ComputeType="Computed" Parameter="State Variable" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="wq_bound_temp_src_CCtunnel" Class="hec2.model.DataLocation" DssPath="//wq_bound_temp_src_CCtunnel/degC//1HOUR/W2 Shasta :2020:ResSim-RSSacTrnNS/" ComputeType="Computed" Parameter="State Variable" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="RSSacTrnNS" Program="ResSim" />
         </DataLocation>
       </DownStreamLocation>
@@ -17,7 +17,7 @@
     <DataLocation Name="LEWISTON RESERVOIR-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//LEWISTON RESERVOIR-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-RSSacTrnNS" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
       <DownStreamLocation>
-        <DataLocation Name="Lewiston Reservoir-Tunnel" Class="hec2.model.DataLocation" DssPath="//Lewiston Reservoir-Tunnel/Temp-Water Temperature//1Hour/W2 Shasta:2018-03-FC:ResSim-RSSacTrnNS/" ComputeType="Computed" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="Lewiston Reservoir-Tunnel" Class="hec2.model.DataLocation" DssPath="//Lewiston Reservoir-Tunnel/Temp-Water Temperature//1Hour/W2 Shasta :2020:ResSim-RSSacTrnNS/" ComputeType="Computed" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="RSSacTrnNS" Program="ResSim" />
         </DataLocation>
       </DownStreamLocation>
@@ -25,7 +25,7 @@
     <DataLocation Name="WQ_BOUND_TEMP_SRC_SCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_SCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-RSSacTrnNS" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
       <DownStreamLocation>
-        <DataLocation Name="wq_bound_temp_src_SCtunnel" Class="hec2.model.DataLocation" DssPath="//wq_bound_temp_src_SCtunnel/degC//1HOUR/W2 Shasta:2018-03-FC:ResSim-RSSacTrnNS/" ComputeType="Computed" Parameter="State Variable" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="wq_bound_temp_src_SCtunnel" Class="hec2.model.DataLocation" DssPath="//wq_bound_temp_src_SCtunnel/degC//1HOUR/W2 Shasta :2020:ResSim-RSSacTrnNS/" ComputeType="Computed" Parameter="State Variable" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="RSSacTrnNS" Program="ResSim" />
         </DataLocation>
       </DownStreamLocation>
@@ -33,23 +33,23 @@
     <DataLocation Name="WHISKEYTOWN LAKE-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WHISKEYTOWN LAKE-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-RSSacTrnNS" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
       <DownStreamLocation>
-        <DataLocation Name="Whiskeytown Lake-Tunnel" Class="hec2.model.DataLocation" DssPath="//Whiskeytown Lake-Tunnel/Temp-Water Temperature//1Hour/W2 Shasta:2018-03-FC:ResSim-RSSacTrnNS/" ComputeType="Computed" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="Whiskeytown Lake-Tunnel" Class="hec2.model.DataLocation" DssPath="//Whiskeytown Lake-Tunnel/Temp-Water Temperature//1Hour/W2 Shasta :2020:ResSim-RSSacTrnNS/" ComputeType="Computed" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="RSSacTrnNS" Program="ResSim" />
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="alt_model_output1" Class="hec2.model.DataLocation" DssPath="//alt_model_output1/Flow//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="CeQualW2-W2 Shasta" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="alt_model_output1" Class="hec2.model.DataLocation" DssPath="//alt_model_output1/Flow//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="CeQualW2-W2 Shasta 5" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
       <DownStreamLocation>
-        <DataLocation Name="Seg 77 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_77.opt/Seg 77 Withdrawal/Flow-QWD//1HOUR/W2 Shasta:2018-03-FC:CeQualW2-W2 Shasta/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="W2 Shasta" Program="CeQualW2" />
+        <DataLocation Name="Seg 77 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_77.csv/Seg 77 Withdrawal/Flow-QWD//1HOUR/W2 Shasta :2020:CeQualW2-W2 Shasta 5/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Shasta 5" Program="CeQualW2" />
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
     <DataLocation Name="alt_model_output2" Class="hec2.model.DataLocation" DssPath="//alt_model_output2/Flow//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-RSSacTrnNS" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
       <DownStreamLocation>
-        <DataLocation Name="Carr Powerhouse" Class="hec2.model.DataLocation" DssPath="//Carr Powerhouse/Flow//1HOUR/W2 Shasta:2018-03-FC:ResSim-RSSacTrnNS/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="Carr Powerhouse" Class="hec2.model.DataLocation" DssPath="//Carr Powerhouse/Flow//1HOUR/W2 Shasta :2020:ResSim-RSSacTrnNS/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="RSSacTrnNS" Program="ResSim" />
         </DataLocation>
       </DownStreamLocation>
@@ -62,12 +62,20 @@
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
+    <DataLocation Name="target_temp_upstream" Class="hec2.model.DataLocation" DssPath="//target_temp_upstream/temp-water//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="DSS File" Parameter="temp-water" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
+      <DownStreamLocation>
+        <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET-W2-UPSTREAM//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER-TARGET-W2-UPSTREAM" OutOfDate="false" PrevModelIndex="0">
+          <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+        </DataLocation>
+      </DownStreamLocation>
+    </DataLocation>
   </DataLocations>
   <OutputDataLocations>
-    <DataLocation Name="LewistonTunnel_With_Heating" Class="hec2.model.DssDataLocation" DssPath="//LewistonTunnel_With_Heating/TEMP-WATER//1HOUR/W2 Shasta:2018-03-FC:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="LewistonTunnel_With_Heating" Class="hec2.model.DssDataLocation" DssPath="//LewistonTunnel_With_Heating/TEMP-WATER//1HOUR/W2 Shasta :2020:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
     </DataLocation>
-    <DataLocation Name="WhiskeyTownTunnel_With_Heating" Class="hec2.model.DssDataLocation" DssPath="//WhiskeyTownTunnel_With_Heating/TEMP-WATER//1HOUR/W2 Shasta:2018-03-FC:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="WhiskeyTownTunnel_With_Heating" Class="hec2.model.DssDataLocation" DssPath="//WhiskeyTownTunnel_With_Heating/TEMP-WATER//1HOUR/W2 Shasta :2020:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
     </DataLocation>
   </OutputDataLocations>

@@ -71,8 +71,8 @@
     </Reservoir>
     <Reservoir Name="Whiskeytown Lake">
       <Profile Name="2025-05-15">
-        <Output-DSS-File>shared/whiskeytown_1Prof.dss</Output-DSS-File>
-        <DSS-Pathname>//Whiskeytown Lake/DEPTH-TEMP//2025-05-15//</DSS-Pathname>
+        <Output-DSS-File>shared/whiskeytown_merged_00-23_Site_1.dss</Output-DSS-File>
+        <DSS-Pathname>//Whiskeytown Lake/DEPTH-TEMP//2025-05-15T09:36:50//</DSS-Pathname>
       </Profile>
     </Reservoir>
     <Reservoir Name="Shasta Lake">
@@ -176,6 +176,27 @@
         <MembersToCompute>1</MembersToCompute>
       </EnsembleSet>
     </Simulation>
+    <Simulation>
+      W2 Shasta 5-May2025_test
+      <EnsembleSet Name="May2025-H-2019-Shasta Dam Target degC - May">
+        <Description />
+        <BcData>May2025-H-2019</BcData>
+        <TemperatureTargetSet>Shasta Dam Target degC - May</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="0" Step="10" />
+        </ComputedMembers>
+        <MembersToCompute />
+      </EnsembleSet>
+      <EnsembleSet Name="May2025-H-2019-Fifty-Three-point-Five">
+        <Description />
+        <BcData>May2025-H-2019</BcData>
+        <TemperatureTargetSet>Fifty-Three-point-Five</TemperatureTargetSet>
+        <ComputedMembers>
+          <intArray Length="0" Step="10" />
+        </ComputedMembers>
+        <MembersToCompute>1</MembersToCompute>
+      </EnsembleSet>
+    </Simulation>
   </EnsembleSets>
   <EnsembleSetIndexing>
     <Simulation Name="W2 Shasta-May2025_test">
@@ -230,6 +251,16 @@
       <EnsembleSet Name="May2025-H-2019-Shasta Dam Target degC - May">
         <CollectionStart>1000</CollectionStart>
         <CollectionEnd>1499</CollectionEnd>
+      </EnsembleSet>
+    </Simulation>
+    <Simulation Name="W2 Shasta 5-May2025_test">
+      <EnsembleSet Name="May2025-H-2019-Fifty-Three-point-Five">
+        <CollectionStart>500</CollectionStart>
+        <CollectionEnd>999</CollectionEnd>
+      </EnsembleSet>
+      <EnsembleSet Name="May2025-H-2019-Shasta Dam Target degC - May">
+        <CollectionStart>0</CollectionStart>
+        <CollectionEnd>499</CollectionEnd>
       </EnsembleSet>
     </Simulation>
   </EnsembleSetIndexing>

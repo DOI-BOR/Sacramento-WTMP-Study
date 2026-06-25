@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<SimulationContainer SimulationContainerName="ResSim-F13-03-ensemble" Description="" AnalysisPeriod="2018-03-FCST" Alternative="ResSim" ProgramOrder="ResSim Only" WarmupTimeSteps="0" SimulationCount="1">
-  <Simulation0 SimulationName="ResSim-F13-03-ensemble" />
-</SimulationContainer>
-

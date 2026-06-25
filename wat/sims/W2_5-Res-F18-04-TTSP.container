@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<SimulationContainer SimulationContainerName="W2 5-Res-F18-04-TTSP" Description="" AnalysisPeriod="2018-04-TTSP" Alternative="W2 5-Res" ProgramOrder="W2 5-Res Plus Rivers" WarmupTimeSteps="0" SimulationCount="1">
-  <Simulation0 SimulationName="W2 5-Res-F18-04-TTSP" />
-</SimulationContainer>
-

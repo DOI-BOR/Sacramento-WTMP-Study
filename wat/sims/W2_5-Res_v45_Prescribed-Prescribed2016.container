@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<SimulationContainer SimulationContainerName="W2 5-Res v45 Prescribed-Prescribed2016" Description="" AnalysisPeriod="2016" Alternative="W2 5-Res v45 Prescribed" ProgramOrder="W2 5-Res Plus Rivers" WarmupTimeSteps="0" SimulationCount="1">
-  <Simulation0 SimulationName="W2 5-Res v45 Prescribed-Prescribed2016" />
-</SimulationContainer>
-

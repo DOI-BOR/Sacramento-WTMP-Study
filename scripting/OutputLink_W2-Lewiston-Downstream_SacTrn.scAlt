@@ -46,12 +46,23 @@
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
+    <DataLocation Name="Seg111_Flow" Class="hec2.model.DataLocation" DssPath="//Seg111_Flow/Flow//1HOUR/alt:ap:Scripting-OutputLink_W2-Lewiston/" ComputeType="Computed" Model="CeQualW2-W2 Lewiston Prescribed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="OutputLink_W2-Lewiston-Downstream_SacTrn" Program="Scripting" />
+      <DownStreamLocation>
+        <DataLocation Name="Seg 111 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_111.csv/Seg 111 Withdrawal/Flow-QWD//1HOUR/W2 5-Res:2018-03-FC:CeQualW2-W2 Lewiston Prescribed/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="W2 Lewiston Prescribed" Program="CeQualW2" />
+        </DataLocation>
+      </DownStreamLocation>
+    </DataLocation>
   </DataLocations>
   <OutputDataLocations>
-    <DataLocation Name="LEW-Out-FWA" Class="hec2.model.DataLocation" DssPath="//LEW-Out-FWA/TEMP-WATER//1HOUR/W2 5-Res:2018-03-FC:Scripting-OutputLink_W2-Lewiston/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="LEW-Out-FWA" Class="hec2.model.DataLocation" DssPath="//LEW-Out-FWA/TEMP-WATER//1HOUR/C:000000|altName:apName:Scripting-OutputLink_W2-Lewiston/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="OutputLink_W2-Lewiston-Downstream_SacTrn" Program="Scripting" />
     </DataLocation>
-    <DataLocation Name="ClearCreek_heated" Class="hec2.model.DataLocation" DssPath="//ClearCreek_heated/Temp//1HOUR/W2 5-Res:2018-03-FC:Scripting-OutputLink_W2-Lewiston/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="ClearCreek_heated" Class="hec2.model.DataLocation" DssPath="//ClearCreek_heated/Temp//1HOUR/C:000000|altName:apName:Scripting-OutputLink_W2-Lewiston/" ComputeType="Computed" Parameter="Temp" OutOfDate="false" PrevModelIndex="0">
+      <ModelAlternative Name="OutputLink_W2-Lewiston-Downstream_SacTrn" Program="Scripting" />
+    </DataLocation>
+    <DataLocation Name="ClearCreek_flow" Class="hec2.model.DataLocation" DssPath="//ClearCreek_flow/Flow//1HOUR/C:000000|altName:apName:Scripting-OutputLink_W2-Lewiston/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="OutputLink_W2-Lewiston-Downstream_SacTrn" Program="Scripting" />
     </DataLocation>
   </OutputDataLocations>

@@ -1240,10 +1240,10 @@
             </DataLocation>
           </DownStreamLocation>
         </DataLocation>
-        <DataLocation Name="Shasta Lake-Pool" Class="hec2.model.DataLocation" DssPath="//Shasta Lake/ELEV-FORECAST//1Day/AMER_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Lookback Elevation" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="Shasta Lake-Pool" Class="hec2.model.DataLocation" DssPath="/SACRAMENTO RIVER/Shasta Lake/ELEV//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Lookback Elevation" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="RSSacTrnRv" Program="ResSim" />
           <DownStreamLocation>
-            <DataLocation Name="Shasta Lake" Class="hec2.model.DssDataLocation" DssPath="/SACRAMENTO RIVER/Shasta Lake/ELEV//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="ELEV" OutOfDate="false" PrevModelIndex="0">
+            <DataLocation Name="Shasta Lake" Class="hec2.model.DssDataLocation" DssPath="/SACRAMENTO RIVER/Shasta Lake/ELEV//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="ELEV-FORECAST" OutOfDate="false" PrevModelIndex="0">
               <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
             </DataLocation>
           </DownStreamLocation>
@@ -1352,10 +1352,10 @@
             </DataLocation>
           </DownStreamLocation>
         </DataLocation>
-        <DataLocation Name="Whiskeytown Lake-Pool" Class="hec2.model.DataLocation" DssPath="//Whiskeytown Lake/ELEV-FORECAST//1Day/AMER_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Lookback Elevation" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="Whiskeytown Lake-Pool" Class="hec2.model.DataLocation" DssPath="/CLEAR CREEK/Whiskeytown Lake/ELEV//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Lookback Elevation" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="RSSacTrnRv" Program="ResSim" />
           <DownStreamLocation>
-            <DataLocation Name="WHISKEYTOWN LAKE" Class="hec2.model.DssDataLocation" DssPath="/CLEAR CREEK/WHISKEYTOWN LAKE/STORAGE-CVP//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="STORAGE-CVP" OutOfDate="false" PrevModelIndex="0">
+            <DataLocation Name="Whiskeytown Lake" Class="hec2.model.DssDataLocation" DssPath="/CLEAR CREEK/Whiskeytown Lake/ELEV//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="ELEV-FORECAST" OutOfDate="false" PrevModelIndex="0">
               <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
             </DataLocation>
           </DownStreamLocation>
@@ -1488,10 +1488,10 @@
             </DataLocation>
           </DownStreamLocation>
         </DataLocation>
-        <DataLocation Name="Trinity Lake-Pool" Class="hec2.model.DataLocation" DssPath="//Trinity Lake/ELEV-FORECAST//1Day/AMER_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Lookback Elevation" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="Trinity Lake-Pool" Class="hec2.model.DataLocation" DssPath="/TRINITY RIVER/Trinity Lake/ELEV//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Lookback Elevation" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="RSSacTrnRv" Program="ResSim" />
           <DownStreamLocation>
-            <DataLocation Name="TRINITY LAKE" Class="hec2.model.DssDataLocation" DssPath="/TRINITY RIVER/TRINITY LAKE/STORAGE-CVP//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="STORAGE-CVP" OutOfDate="false" PrevModelIndex="0">
+            <DataLocation Name="Trinity Lake" Class="hec2.model.DssDataLocation" DssPath="/TRINITY RIVER/Trinity Lake/ELEV//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="ELEV-FORECAST" OutOfDate="false" PrevModelIndex="0">
               <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
             </DataLocation>
           </DownStreamLocation>

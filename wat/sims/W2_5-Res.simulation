@@ -37,18 +37,18 @@
       </Description>
       <LastComputeTime Date="31 December 1899, 24:00" />
     </ModelAlternative6>
-    <ModelAlternative7 Program="CeQualW2" Name="W2 Shasta" File="CeQual-W2/W2/W2 Shasta/W2_Shasta.w2Alt">
+    <ModelAlternative7 Program="CeQualW2" Name="W2 Shasta 5" File="CeQual-W2/W2/W2 Shasta 5/W2_Shasta_5.w2Alt">
       <Description />
       <LastComputeTime Date="31 December 1899, 24:00" />
     </ModelAlternative7>
-    <ModelAlternative8 Program="CeQualW2" Name="W2 Keswick Prescribed" File="CeQual-W2/W2 Keswick Prescribed/W2 Keswick Prescribed/W2_Keswick_Prescribed.w2Alt">
-      <Description />
-      <LastComputeTime Date="31 December 1899, 24:00" />
-    </ModelAlternative8>
-    <ModelAlternative9 Program="Scripting" Name="Pre-Process_ResSim_SacTrn" File="scripting/Pre-Process_ResSim_SacTrn.scAlt">
+    <ModelAlternative8 Program="Scripting" Name="Pre-Process_ResSim_SacTrn" File="scripting/Pre-Process_ResSim_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Pre-process any data into required ResSim-specific records for forecast simulations" />
       </Description>
+      <LastComputeTime Date="31 December 1899, 24:00" />
+    </ModelAlternative8>
+    <ModelAlternative9 Program="CeQualW2" Name="W2 Keswick Prescribed" File="CeQual-W2/W2 Keswick Prescribed/W2 Keswick Prescribed/W2_Keswick_Prescribed.w2Alt">
+      <Description />
       <LastComputeTime Date="31 December 1899, 24:00" />
     </ModelAlternative9>
     <ModelAlternative10 Program="ResSim" Name="RSSacTrnRv" File="rss/RSSacTrnRv.ralt">

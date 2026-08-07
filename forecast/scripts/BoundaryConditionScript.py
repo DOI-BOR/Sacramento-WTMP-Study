@@ -965,11 +965,11 @@ def create_ops_BC_data(ops_file_name, start_time, end_time, BC_output_DSS_filena
 	# Estimate Shasta Tributary Temperatures
 	########################
 
-	#River, Intercept (deg C), Flow Coef (cfs), Air Temp Coef (deg C), RMS Error (deg C)
+	#River, Intercept (deg C), Flow Coef (cfs), Air Temp Coef (deg C), RMSE Error (deg C)
 	tributary_temp_regression_coefficients = {
-		"Shasta-Sac-in": (1.1597557, -2.5038779e-04, 0.62590134, 1.6474143),
-		"Shasta-Pit-in": (3.2822256, -1.541817e-04, 0.55336446, 1.4528962),
-		"Shasta-McCloud-in": (1.735364, 2.1436048e-04, 0.48995328, 1.1855532)}
+		"Shasta-Sac-in": (2.415046492, -0.000987216, 0.58256543, 1.857597335),
+		"Shasta-Pit-in": (4.029028312, -0.000234506,0.510349367, 2.123152431),
+		"Shasta-McCloud-in": (2.221323686, 5.18E-05, 0.463827771, 1.438501982)}
 	ts_read = hec.heclib.dss.HecTimeSeries()
 	ts_read.setDSSFileName(met_DSS_file_name)
 	tsc_airtemp = tscont()

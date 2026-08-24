@@ -51,24 +51,18 @@
       <Description />
       <LastComputeTime Date="31 December 1899, 24:00" />
     </ModelAlternative9>
-    <ModelAlternative10 Program="Scripting" Name="Pause" File="scripting/Pause.scAlt">
-      <Description>
-        <desc cnt="0" value="Pauses for ten seconds to allow DSS files to unlock for next simulation." />
-      </Description>
-      <LastComputeTime Date="31 December 1899, 24:00" />
-    </ModelAlternative10>
-    <ModelAlternative11 Program="ResSim" Name="SacTrnRvF" File="rss/SacTrnRvF.ralt">
+    <ModelAlternative10 Program="ResSim" Name="SacTrnRvF" File="rss/SacTrnRvF.ralt">
       <Description>
         <desc cnt="0" value="Copy for forecast mode of Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used." />
       </Description>
       <LastComputeTime Date="31 December 1899, 24:00" />
-    </ModelAlternative11>
-    <ModelAlternative12 Program="Scripting" Name="Post-Process_ResSim_SacTrnRv" File="scripting/Post-Process_ResSim_SacTrnRv.scAlt">
+    </ModelAlternative10>
+    <ModelAlternative11 Program="Scripting" Name="Post-Process_ResSim_SacTrnRv" File="scripting/Post-Process_ResSim_SacTrnRv.scAlt">
       <Description>
         <desc cnt="0" value="Copies some DSS records for plotting" />
       </Description>
       <LastComputeTime Date="31 December 1899, 24:00" />
-    </ModelAlternative12>
+    </ModelAlternative11>
   </ModelAlternatives>
   <TimeWindowManager Class="hec2.plugin.timewindow.TimeWindowManagerImpl" />
 </WatSimulation>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WatSimulation SimulationName="W2 5-Res" Description="" FPart="W2 5-Res:2018-03-FC" HasComputed="false" ComputeError="false" Parent="W2 5-Res" IsFrmSimulation="false">
-  <ModelAlternatives ModelAlternativeCount="12">
+  <ModelAlternatives ModelAlternativeCount="13">
     <ModelAlternative0 Program="Scripting" Name="Pre-Process_W2_5-Res_SacTrn" File="scripting/Pre-Process_W2_5-Res_SacTrn.scAlt">
       <Description>
         <desc cnt="0" value="Process forecast data for use by W2-5Res coupled to a ResSim river model" />
@@ -51,8 +51,10 @@
       <Description />
       <LastComputeTime Date="31 December 1899, 24:00" />
     </ModelAlternative9>
-    <ModelAlternative10 Program="ResSim" Name="RSSacTrnRv" File="rss/RSSacTrnRv.ralt">
-      <Description />
+    <ModelAlternative10 Program="ResSim" Name="SacTrnRvF" File="rss/SacTrnRvF.ralt">
+      <Description>
+        <desc cnt="0" value="Copy for forecast mode of Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used." />
+      </Description>
       <LastComputeTime Date="31 December 1899, 24:00" />
     </ModelAlternative10>
     <ModelAlternative11 Program="Scripting" Name="Post-Process_ResSim_SacTrnRv" File="scripting/Post-Process_ResSim_SacTrnRv.scAlt">

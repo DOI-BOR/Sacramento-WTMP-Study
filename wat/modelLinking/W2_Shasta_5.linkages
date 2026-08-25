@@ -7,10 +7,10 @@
         <desc cnt="0" value="Pre-process any data into required ResSim-specific records for forecast simulations" />
       </Description>
       <DataLocations>
-        <DataLocation Name="model_output" Class="hec2.model.DataLocation" DssPath="//model_output/Flow//1HOUR/alt:ap:Scripting-Pre-Process_ResSim_Sac/" ComputeType="Computed" Model="CeQualW2-W2 Shasta 5" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
+        <DataLocation Name="model_output" Class="hec2.model.DataLocation" DssPath="//model_output/temp-water//1HOUR/alt:ap:Scripting-Pre-Process_ResSim_Sac/" ComputeType="Computed" Model="CeQualW2-W2 Shasta 5" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="Pre-Process_ResSim_SacTrn" Program="Scripting" />
           <DownStreamLocation>
-            <DataLocation Name="Seg 77 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_77.csv/Seg 77 Withdrawal/Flow-QWD//1HOUR/C:000000|altName:apName:CeQualW2-W2 Shasta 5/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
+            <DataLocation Name="Seg 77 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:two_77.csv/Seg 77 Withdrawal/Temp-TWO//1HOUR/C:000000|altName:apName:CeQualW2-W2 Shasta 5/" ComputeType="Computed" Parameter="Temp-TWO" OutOfDate="false" PrevModelIndex="0">
               <ModelAlternative Name="W2 Shasta 5" Program="CeQualW2" />
             </DataLocation>
           </DownStreamLocation>

@@ -403,14 +403,14 @@ def create_ops_BC_data(ops_file_name, start_time, end_time, BC_output_DSS_filena
 		trinity_pattern_DSS_file_name = os.path.join(Project.getCurrentProject().getWorkspacePath(), trinity_pattern_DSS_file_name)
 
 	met_DSS_file_name = ""
-	airtemp_path = ""
+	airtemp_path_redding = ""
 	with open(DSS_map_filename) as infile:
 		for line in infile:
 			if (line.split(',')[0].strip().upper() == "REDDING AIRPORT" and
 				line.split(',')[1].strip().upper() == "AIR TEMPERATURE"):
 				met_DSS_file_name = line.split(',')[2].strip().strip('\\')
-				airtemp_path = line.split(',')[3].strip()
-	if len(met_DSS_file_name) == 0 or len(airtemp_path) == 0:
+				airtemp_path_redding = line.split(',')[3].strip()
+	if len(met_DSS_file_name) == 0 or len(airtemp_path_redding) == 0:
 		print "Error reading Shasta air temperature data configuration from file\n\t%s"%(DSS_map_filename)
 		print "Air temperature DSS file or path not found."
 		return None
@@ -609,16 +609,16 @@ def create_ops_BC_data(ops_file_name, start_time, end_time, BC_output_DSS_filena
 	########################
 
 	met_DSS_file_name = ""
-	airtemp_path = ""
+	airtemp_path_lewiston = ""
 
 	for line in DSS_map_lines:
 		# print line
 		if (line.split(',')[0].strip().upper() == "LEWISTON RES" and
 			line.split(',')[1].strip().upper() == "AIR TEMPERATURE"):
 			met_DSS_file_name = line.split(',')[2].strip().strip('\\')
-			airtemp_path = line.split(',')[3].strip()
+			airtemp_path_lewiston = line.split(',')[3].strip()
 			break
-	if len(met_DSS_file_name) == 0 or len(airtemp_path) == 0:
+	if len(met_DSS_file_name) == 0 or len(airtemp_path_lewiston) == 0:
 		print "Error reading Trinity air temperature data configuration from file\n\t%s"%(DSS_map_filename)
 		print "Air temperature DSS file or path not found."
 		return None
@@ -635,7 +635,7 @@ def create_ops_BC_data(ops_file_name, start_time, end_time, BC_output_DSS_filena
 	ts_read = hec.heclib.dss.HecTimeSeries()
 	ts_read.setDSSFileName(met_DSS_file_name)
 	tsc_airtemp = tscont()
-	tsc_airtemp.fullName = airtemp_path
+	tsc_airtemp.fullName = airtemp_path_lewiston
 	status = ts_read.read(tsc_airtemp, False)
 	if status < 0:
 		print "Failed to read pattern time series %s \n\tfrom DSS file %s"%(tsc_pattern.fullName, whiskeytown_pattern_DSS_file_name)
@@ -965,15 +965,15 @@ def create_ops_BC_data(ops_file_name, start_time, end_time, BC_output_DSS_filena
 	# Estimate Shasta Tributary Temperatures
 	########################
 
-	#River, Intercept (deg C), Flow Coef (cfs), Air Temp Coef (deg C), RMS Error (deg C)
+	#River, Intercept (deg C), Flow Coef (cfs), Air Temp Coef (deg C), RMSE Error (deg C)
 	tributary_temp_regression_coefficients = {
-		"Shasta-Sac-in": (1.1597557, -2.5038779e-04, 0.62590134, 1.6474143),
-		"Shasta-Pit-in": (3.2822256, -1.541817e-04, 0.55336446, 1.4528962),
-		"Shasta-McCloud-in": (1.735364, 2.1436048e-04, 0.48995328, 1.1855532)}
+		"Shasta-Sac-in": (2.415046492, -0.000987216, 0.58256543, 1.857597335),
+		"Shasta-Pit-in": (4.029028312, -0.000234506,0.510349367, 2.123152431),
+		"Shasta-McCloud-in": (2.221323686, 5.18E-05, 0.463827771, 1.438501982)}
 	ts_read = hec.heclib.dss.HecTimeSeries()
 	ts_read.setDSSFileName(met_DSS_file_name)
 	tsc_airtemp = tscont()
-	tsc_airtemp.fullName = airtemp_path
+	tsc_airtemp.fullName = airtemp_path_redding
 	status = ts_read.read(tsc_airtemp, False)
 	if status < 0:
 		print "Failed to read pattern time series %s \n\tfrom DSS file %s"%(tsc_pattern.fullName, whiskeytown_pattern_DSS_file_name)

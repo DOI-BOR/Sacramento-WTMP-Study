@@ -7,7 +7,7 @@
       </Description>
       <LastComputeTime Date="31 December 1899, 24:00" />
     </ModelAlternative0>
-    <ModelAlternative1 Program="ResSim" Name="RSSacTrnPO" File="rss/RSSacTrnPO.ralt">
+    <ModelAlternative1 Program="ResSim" Name="SacTrnP" File="rss/SacTrnP.ralt">
       <Description />
       <LastComputeTime Date="31 December 1899, 24:00" />
     </ModelAlternative1>

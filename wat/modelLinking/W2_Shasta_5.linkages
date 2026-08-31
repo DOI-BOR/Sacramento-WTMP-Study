@@ -382,83 +382,6 @@
         </DataLocation>
       </DataLocations>
     </ModelAlternative>
-    <ModelAlternative Program="Scripting" Name="Pre-Process_W2_5-Res_SacTrn" File="scripting/Pre-Process_W2_5-Res_SacTrn.scAlt">
-      <Description>
-        <desc cnt="0" value="Process forecast data for use by W2-5Res coupled to a ResSim river model" />
-      </Description>
-      <DataLocations />
-    </ModelAlternative>
-    <ModelAlternative Program="Scripting" Name="Post-Process_ResSim_SacTrnNS" File="scripting/Post-Process_ResSim_SacTrnNS.scAlt">
-      <Description>
-        <desc cnt="0" value="Adds tunnel heating to output values to provide a record of end-tunnel temperatures" />
-      </Description>
-      <DataLocations>
-        <DataLocation Name="WQ_BOUND_TEMP_SRC_CCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_CCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-SacTrnNSF" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
-          <DownStreamLocation>
-            <DataLocation Name="wq_bound_temp_src_CCtunnel" Class="hec2.model.DataLocation" DssPath="//wq_bound_temp_src_CCtunnel/degC//1HOUR/C:000000|altName:apName:ResSim-SacTrnNSF/" ComputeType="Computed" Parameter="State Variable" OutOfDate="false" PrevModelIndex="0">
-              <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="LEWISTON RESERVOIR-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//LEWISTON RESERVOIR-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-SacTrnNSF" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
-          <DownStreamLocation>
-            <DataLocation Name="Lewiston Reservoir-Tunnel" Class="hec2.model.DataLocation" DssPath="//Lewiston Reservoir-Tunnel/Temp-Water Temperature//1Hour/C:000000|altName:apName:ResSim-SacTrnNSF/" ComputeType="Computed" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-              <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ_BOUND_TEMP_SRC_SCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_SCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-SacTrnNSF" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
-          <DownStreamLocation>
-            <DataLocation Name="wq_bound_temp_src_SCtunnel" Class="hec2.model.DataLocation" DssPath="//wq_bound_temp_src_SCtunnel/degC//1HOUR/C:000000|altName:apName:ResSim-SacTrnNSF/" ComputeType="Computed" Parameter="State Variable" OutOfDate="false" PrevModelIndex="0">
-              <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WHISKEYTOWN LAKE-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WHISKEYTOWN LAKE-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-SacTrnNSF" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
-          <DownStreamLocation>
-            <DataLocation Name="Whiskeytown Lake-Tunnel" Class="hec2.model.DataLocation" DssPath="//Whiskeytown Lake-Tunnel/Temp-Water Temperature//1Hour/C:000000|altName:apName:ResSim-SacTrnNSF/" ComputeType="Computed" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-              <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="alt_model_output1" Class="hec2.model.DataLocation" DssPath="//alt_model_output1/Flow//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="CeQualW2-W2 Shasta 5" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
-          <DownStreamLocation>
-            <DataLocation Name="Seg 77 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_77.csv/Seg 77 Withdrawal/Flow-QWD//1HOUR/C:000000|altName:apName:CeQualW2-W2 Shasta 5/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
-              <ModelAlternative Name="W2 Shasta 5" Program="CeQualW2" />
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="alt_model_output2" Class="hec2.model.DataLocation" DssPath="//alt_model_output2/Flow//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-SacTrnNSF" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
-          <DownStreamLocation>
-            <DataLocation Name="Carr Powerhouse" Class="hec2.model.DataLocation" DssPath="//Carr Powerhouse/Flow//1HOUR/C:000000|altName:apName:ResSim-SacTrnNSF/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
-              <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="target_temp" Class="hec2.model.DataLocation" DssPath="//target_temp/temp-water//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="DSS File" Parameter="temp-water" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
-          <DownStreamLocation>
-            <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER-TARGET" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="target_temp_upstream" Class="hec2.model.DataLocation" DssPath="//target_temp_upstream/temp-water//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="DSS File" Parameter="temp-water" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
-          <DownStreamLocation>
-            <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET-W2-UPSTREAM//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER-TARGET-W2-UPSTREAM" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-      </DataLocations>
-    </ModelAlternative>
     <ModelAlternative Program="ResSim" Name="SacTrnNSF" File="rss/SacTrnNSF.ralt">
       <Description />
       <DataLocations>
@@ -1054,406 +977,6 @@
             </DataLocation>
           </DownStreamLocation>
         </DataLocation>
-        <DataLocation Name="WQ-Lewiston Met-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Lewiston Res./TCAC1/Temp-Air//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./" ComputeType="Computed" Parameter="Temp-Air" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Lewiston Met-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Lewiston Res./TCAC1/Temp-DewPoint//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./" ComputeType="Computed" Parameter="Temp-DewPoint" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Lewiston Met-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Lewiston Met-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Lewiston Met-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-RDD Redding Airport-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-RDD Redding Airport-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-DEWPOINT" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-RDD Redding Airport-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-RDD Redding Airport-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-RDD Redding Airport-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Sacramento R Met-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Sacramento R Met-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/" ComputeType="Computed" Parameter="RELHUM-FROM-AT-DP" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Sacramento R Met-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Sacramento R Met-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Sacramento R Met-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Shasta Met-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Shasta Met-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/" ComputeType="Computed" Parameter="RELHUM-FROM-AT-DP" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Shasta Met-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Shasta Met-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Shasta Met-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity Center-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity Center-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-DEWPOINT" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity Center-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity Center-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity Center-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity R Met-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity R Met-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-DEWPOINT" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity R Met-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity R Met-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity R Met-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Whiskeytown Met-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Whiskeytown Met-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-DEWPOINT" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Whiskeytown Met-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Whiskeytown Met-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Whiskeytown Met-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity R at Canyon Cr - Canyon Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R CANYON CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TRINITY R CANYON CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R CANYON CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity R at Rush Cr - Rush Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R RUSH CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TRINITY R RUSH CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R RUSH CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity R at Grass Valley Cr - Grass Valley Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TRINITY R GRASS VALLEY CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-East Fork Trinity in - Trinity - East Fork Trinity Inflow" Class="hec2.model.DataLocation" Description="" DssPath="//EF TRINITY/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="EF TRINITY" Class="hec2.model.DssDataLocation" DssPath="//EF TRINITY/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Sacramento R + Cow Cr - Cow Creek Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="COTTONWOOD_CREEK" Class="hec2.model.DssDataLocation" DssPath="/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-IN" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity R at Browns Cr - Browns Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R BROWNS CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TRINITY R BROWNS CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R BROWNS CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity River at Reading Cr - Reading Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R READING CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TRINITY R READING CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R READING CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity R at Indian Cr - Indian Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R INDIAN CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TRINITY R INDIAN CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R INDIAN CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity R at Weaver Cr - Weaver Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R WEAVER CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TRINITY R WEAVER CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R WEAVER CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Shasta out" Class="hec2.model.DataLocation" Description="" DssPath="/MR Sac.-Shasta Lake/SHA-Calc-SP1-5 WTemp/Temp-Water//1Hour/230.14.50.2.1/" ComputeType="Computed" Model="CeQualW2-W2 Shasta 5" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="Seg 77 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:two_77.csv/Seg 77 Withdrawal/Temp-TWO//1HOUR/C:000000|altName:apName:CeQualW2-W2 Shasta 5/" ComputeType="Computed" Parameter="Temp-TWO" OutOfDate="false" PrevModelIndex="0">
-              <ModelAlternative Name="W2 Shasta 5" Program="CeQualW2" />
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Trinity In - Trinity - Trinity River Inflow" Class="hec2.model.DataLocation" Description="" DssPath="//TRINITY RIVER/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="TRINITY RIVER" Class="hec2.model.DssDataLocation" DssPath="//TRINITY RIVER/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Sacramento R + Cottonwood Cr - Cottonwood Creek Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="COTTONWOOD_CREEK" Class="hec2.model.DssDataLocation" DssPath="/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-IN" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Swift Creek in - Trinity - Swift Creek Inflow" Class="hec2.model.DataLocation" Description="" DssPath="//SWIFT CR/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="SWIFT CR" Class="hec2.model.DssDataLocation" DssPath="//SWIFT CR/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Stuart Fork in - Trinity - Stuart Fork Inflow" Class="hec2.model.DataLocation" Description="" DssPath="//STUART FORK/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="STUART FORK" Class="hec2.model.DssDataLocation" DssPath="//STUART FORK/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
-        <DataLocation Name="WQ-Sacramento R + Battle Cr - Battle Creek Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/BATTLE_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
-          <DownStreamLocation>
-            <DataLocation Name="BATTLE_CREEK" Class="hec2.model.DssDataLocation" DssPath="/USBR/BATTLE_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-IN" OutOfDate="false" PrevModelIndex="0">
-              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
-            </DataLocation>
-          </DownStreamLocation>
-        </DataLocation>
         <DataLocation Name="WQ(IC)-Keswick Reservoir-Water_Temperature" Class="hec2.model.DataLocation" DssPath="//Keswick Reservoir/DEPTH-TEMP//2010-04-14//" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
           <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
           <DownStreamLocation>
@@ -1482,6 +1005,483 @@
           <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
           <DownStreamLocation>
             <DataLocation Name="IC" Class="hec2.model.DssDataLocation" DssPath="/Whiskeytown Lake/IC/depth-temp///icPathsMap/" ComputeType="Computed" Parameter="depth-temp" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-East Fork Trinity in - Trinity - East Fork Trinity Inflow" Class="hec2.model.DataLocation" Description="" DssPath="//EF TRINITY/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="EF TRINITY" Class="hec2.model.DssDataLocation" DssPath="//EF TRINITY/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Lewiston Met-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR Sac.-Lewiston Res./TCAC1/Temp-Air//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Lewiston Res./TCAC1/Temp-Air//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./" ComputeType="Computed" Parameter="Temp-Air" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Lewiston Met-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Lewiston Met-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR Sac.-Lewiston Res./TCAC1/Temp-DewPoint//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR Sac.-Lewiston Res./TCAC1/Temp-DewPoint//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./" ComputeType="Computed" Parameter="Temp-DewPoint" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Lewiston Met-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Lewiston Met-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-RDD Redding Airport-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-RDD Redding Airport-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-RDD Redding Airport-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-DEWPOINT" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-RDD Redding Airport-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-RDD Redding Airport-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Sacramento R + Battle Cr - Battle Creek Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/BATTLE_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="BATTLE_CREEK" Class="hec2.model.DssDataLocation" DssPath="/USBR/BATTLE_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-IN" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Sacramento R + Cottonwood Cr - Cottonwood Creek Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="COTTONWOOD_CREEK" Class="hec2.model.DssDataLocation" DssPath="/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-IN" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Sacramento R + Cow Cr - Cow Creek Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="COTTONWOOD_CREEK" Class="hec2.model.DssDataLocation" DssPath="/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-IN" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Sacramento R Met-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Sacramento R Met-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Sacramento R Met-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/" ComputeType="Computed" Parameter="RELHUM-FROM-AT-DP" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Sacramento R Met-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Sacramento R Met-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Shasta Met-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Shasta Met-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Shasta Met-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/" ComputeType="Computed" Parameter="RELHUM-FROM-AT-DP" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Shasta Met-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Shasta Met-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Shasta out" Class="hec2.model.DataLocation" Description="" DssPath="/MR Sac.-Shasta Lake/SHA-Calc-SP1-5 WTemp/Temp-Water//1Hour/230.14.50.2.1/" ComputeType="Computed" Model="CeQualW2-W2 Shasta 5" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="Seg 77 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:two_77.csv/Seg 77 Withdrawal/Temp-TWO//1HOUR/C:000000|altName:apName:CeQualW2-W2 Shasta 5/" ComputeType="Computed" Parameter="Temp-TWO" OutOfDate="false" PrevModelIndex="0">
+              <ModelAlternative Name="W2 Shasta 5" Program="CeQualW2" />
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Stuart Fork in - Trinity - Stuart Fork Inflow" Class="hec2.model.DataLocation" Description="" DssPath="//STUART FORK/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="STUART FORK" Class="hec2.model.DssDataLocation" DssPath="//STUART FORK/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Swift Creek in - Trinity - Swift Creek Inflow" Class="hec2.model.DataLocation" Description="" DssPath="//SWIFT CR/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="SWIFT CR" Class="hec2.model.DssDataLocation" DssPath="//SWIFT CR/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity Center-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity Center-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity Center-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-DEWPOINT" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity Center-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity Center-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity In - Trinity - Trinity River Inflow" Class="hec2.model.DataLocation" Description="" DssPath="//TRINITY RIVER/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TRINITY RIVER" Class="hec2.model.DssDataLocation" DssPath="//TRINITY RIVER/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity R at Browns Cr - Browns Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R BROWNS CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TRINITY R BROWNS CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R BROWNS CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity R at Canyon Cr - Canyon Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R CANYON CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TRINITY R CANYON CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R CANYON CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity R at Grass Valley Cr - Grass Valley Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TRINITY R GRASS VALLEY CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity R at Indian Cr - Indian Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R INDIAN CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TRINITY R INDIAN CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R INDIAN CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity R at Rush Cr - Rush Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R RUSH CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TRINITY R RUSH CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R RUSH CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity R at Weaver Cr - Weaver Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R WEAVER CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TRINITY R WEAVER CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R WEAVER CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity R Met-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity R Met-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity R Met-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-DEWPOINT" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity R Met-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity R Met-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TCAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Trinity River at Reading Cr - Reading Cr Local Inflow" Class="hec2.model.DataLocation" Description="" DssPath="/USBR/TRINITY R READING CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="TRINITY R READING CK" Class="hec2.model.DssDataLocation" DssPath="/USBR/TRINITY R READING CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Whiskeytown Met-Air Temperature" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Air Temperature" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-AIR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Whiskeytown Met-Cloudiness" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Cloudiness" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="%-CLOUD COVER-FRAC" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Whiskeytown Met-Humidity" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Humidity" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-DEWPOINT" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Whiskeytown Met-Shortwave Radiation" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Shortwave Radiation" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="RRAC1" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="IRRAD-SOLAR" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ-Whiskeytown Met-Wind Speed" Class="hec2.model.DataLocation" Description="" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Model="DSS File" Parameter="Wind Speed" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+          <DownStreamLocation>
+            <DataLocation Name="KRDD" Class="hec2.model.DssDataLocation" DssPath="/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="SPEED-WIND" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+      </DataLocations>
+    </ModelAlternative>
+    <ModelAlternative Program="Scripting" Name="Pre-Process_W2_5-Res_SacTrn" File="scripting/Pre-Process_W2_5-Res_SacTrn.scAlt">
+      <Description>
+        <desc cnt="0" value="Process forecast data for use by W2-5Res coupled to a ResSim river model" />
+      </Description>
+      <DataLocations />
+    </ModelAlternative>
+    <ModelAlternative Program="Scripting" Name="Post-Process_ResSim_SacTrnNS" File="scripting/Post-Process_ResSim_SacTrnNS.scAlt">
+      <Description>
+        <desc cnt="0" value="Adds tunnel heating to output values to provide a record of end-tunnel temperatures" />
+      </Description>
+      <DataLocations>
+        <DataLocation Name="WQ_BOUND_TEMP_SRC_CCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_CCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-SacTrnNSF" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
+          <DownStreamLocation>
+            <DataLocation Name="wq_bound_temp_src_CCtunnel" Class="hec2.model.DataLocation" DssPath="//wq_bound_temp_src_CCtunnel/degC//1HOUR/C:000000|altName:apName:ResSim-SacTrnNSF/" ComputeType="Computed" Parameter="State Variable" OutOfDate="false" PrevModelIndex="0">
+              <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="LEWISTON RESERVOIR-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//LEWISTON RESERVOIR-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-SacTrnNSF" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
+          <DownStreamLocation>
+            <DataLocation Name="Lewiston Reservoir-Tunnel" Class="hec2.model.DataLocation" DssPath="//Lewiston Reservoir-Tunnel/Temp-Water Temperature//1Hour/C:000000|altName:apName:ResSim-SacTrnNSF/" ComputeType="Computed" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+              <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WQ_BOUND_TEMP_SRC_SCTUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WQ_BOUND_TEMP_SRC_SCTUNNEL/DEGC//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-SacTrnNSF" Parameter="DEGC" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
+          <DownStreamLocation>
+            <DataLocation Name="wq_bound_temp_src_SCtunnel" Class="hec2.model.DataLocation" DssPath="//wq_bound_temp_src_SCtunnel/degC//1HOUR/C:000000|altName:apName:ResSim-SacTrnNSF/" ComputeType="Computed" Parameter="State Variable" OutOfDate="false" PrevModelIndex="0">
+              <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="WHISKEYTOWN LAKE-TUNNEL" Class="hec2.model.DssDataLocation" DssPath="//WHISKEYTOWN LAKE-TUNNEL/TEMP-WATER TEMPERATURE//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-SacTrnNSF" Parameter="TEMP-WATER TEMPERATURE" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
+          <DownStreamLocation>
+            <DataLocation Name="Whiskeytown Lake-Tunnel" Class="hec2.model.DataLocation" DssPath="//Whiskeytown Lake-Tunnel/Temp-Water Temperature//1Hour/C:000000|altName:apName:ResSim-SacTrnNSF/" ComputeType="Computed" Parameter="Water Temperature" OutOfDate="false" PrevModelIndex="0">
+              <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="alt_model_output1" Class="hec2.model.DataLocation" DssPath="//alt_model_output1/Flow//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="CeQualW2-W2 Shasta 5" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
+          <DownStreamLocation>
+            <DataLocation Name="Seg 77 Withdrawal" Class="hec2.model.DataLocation" DssPath="/W2:qwo_77.csv/Seg 77 Withdrawal/Flow-QWD//1HOUR/C:000000|altName:apName:CeQualW2-W2 Shasta 5/" ComputeType="Computed" Parameter="Flow-QWD" OutOfDate="false" PrevModelIndex="0">
+              <ModelAlternative Name="W2 Shasta 5" Program="CeQualW2" />
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="alt_model_output2" Class="hec2.model.DataLocation" DssPath="//alt_model_output2/Flow//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-SacTrnNSF" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
+          <DownStreamLocation>
+            <DataLocation Name="Carr Powerhouse" Class="hec2.model.DataLocation" DssPath="//Carr Powerhouse/Flow//1HOUR/C:000000|altName:apName:ResSim-SacTrnNSF/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
+              <ModelAlternative Name="SacTrnNSF" Program="ResSim" />
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="target_temp" Class="hec2.model.DataLocation" DssPath="//target_temp/temp-water//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="DSS File" Parameter="temp-water" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
+          <DownStreamLocation>
+            <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET//1Hour/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER-TARGET" OutOfDate="false" PrevModelIndex="0">
+              <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
+            </DataLocation>
+          </DownStreamLocation>
+        </DataLocation>
+        <DataLocation Name="target_temp_upstream" Class="hec2.model.DataLocation" DssPath="//target_temp_upstream/temp-water//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="DSS File" Parameter="temp-water" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="Post-Process_ResSim_SacTrnNS" Program="Scripting" />
+          <DownStreamLocation>
+            <DataLocation Name="SHASTA" Class="hec2.model.DssDataLocation" DssPath="/USBR/SHASTA/TEMP-WATER-TARGET-W2-UPSTREAM//1Day/SACTRN_BC_SCRIPT/" ComputeType="Computed" Parameter="TEMP-WATER-TARGET-W2-UPSTREAM" OutOfDate="false" PrevModelIndex="0">
               <DssFile>shared/WTMP_SacTrn_Forecast.dss</DssFile>
             </DataLocation>
           </DownStreamLocation>

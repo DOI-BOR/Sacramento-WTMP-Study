@@ -1680,7 +1680,7 @@
     </ModelAlternative>
     <ModelAlternative Program="ResSim" Name="SacTrnRvF" File="rss/SacTrnRvF.ralt">
       <Description>
-        <desc cnt="0" value="Copy for forecast mode of Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used." />
+        <desc cnt="0" value="Copy for forecast mode of Derived from SacTrnP, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used." />
       </Description>
       <DataLocations>
         <DataLocation Name="Shasta - Pit River Inflow" Class="hec2.model.DataLocation" DssPath="/MR Sac.-Shasta Lake/Pit R. Branch-Flow/Flow//1Day/230.6.125.1.1/" ComputeType="Computed" Model="DSS File" Parameter="Known Flow" OutOfDate="false" PrevModelIndex="0">

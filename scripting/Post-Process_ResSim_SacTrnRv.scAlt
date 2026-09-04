@@ -14,11 +14,11 @@
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
-    <DataLocation Name="alt_model_output2" Class="hec2.model.DataLocation" DssPath="//alt_model_output2/Flow//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-RSSacTrnRv" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
+    <DataLocation Name="alt_model_output2" Class="hec2.model.DataLocation" DssPath="//alt_model_output2/Flow//1HOUR/alt:ap:Scripting-Post-Process_ResSim_Sa/" ComputeType="Computed" Model="ResSim-SacTrnRvF" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
       <ModelAlternative Name="Post-Process_ResSim_SacTrnRv" Program="Scripting" />
       <DownStreamLocation>
-        <DataLocation Name="Sacramento R + Clear Cr" Class="hec2.model.DataLocation" DssPath="//Sacramento R + Clear Cr/Flow//1HOUR/W2 5-Res:2018-03-FC:ResSim-RSSacTrnRv/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
-          <ModelAlternative Name="RSSacTrnRv" Program="ResSim" />
+        <DataLocation Name="Sacramento R + Clear Cr" Class="hec2.model.DataLocation" DssPath="//Sacramento R + Clear Cr/Flow//1HOUR/W2 5-Res:2018-03-FC:ResSim-SacTrnRvF/" ComputeType="Computed" Parameter="Flow" OutOfDate="false" PrevModelIndex="0">
+          <ModelAlternative Name="SacTrnRvF" Program="ResSim" />
         </DataLocation>
       </DownStreamLocation>
     </DataLocation>
